@@ -4,21 +4,35 @@ import os
 import sys
 import pickle
 from datetime import date
+from random import shuffle
 
 class byte:
     '''
-    This class defines a single memory index card
+    This class defines a single memory index card.
     '''
     def __init__(self):
+        '''
+        A new byte has level=1 so that you get quizzed on it most frequently,
+        until you answer it correctly, at which point its level will increase and
+        you will see it less often.
+        '''
         self.level = 1
         self.question = ""
         self.answer = ""
 
-zeroday = date(2019, 4, 1)
-f_archive = "spacerep_tape"
-f_active = "spacerep_SSD"
+ZERODAY = date(2019, 4, 1)
+f_archive = "memory_tape"
+f_active = "memory_SSD"
 
-# A list of 64 lists, following a specific pattern of spaced repetitions
+'''
+A list of 64 lists, following a specific pattern of spaced repetitions.
+Each index contains a subset of the 7 levels a byte can progress through.
+Every day accesses a subsequent index in the levelRing (as determined by
+the difference between 'today' and the constant ZERODAY), so every day
+you will be quizzed on the active bytes whose levels correspond to that day's index.
+
+i.e. if today's index is 3, you will see bytes with levels 4 and 1.
+'''
 levelRing = [[2, 1], [3, 1], [2, 1], [4, 1],
              [2, 1], [3, 1], [2, 1], [1],
              [2, 1], [3, 1], [2, 1], [5, 1],
@@ -49,14 +63,14 @@ def getDate():
 
 def getLvlIdx(today):
     '''
-    Finds difference (# of days) between 'today' and the 'zeroday' date,
+    Finds difference (# of days) between 'today' and the 'ZERODAY' date,
     to compute which of the 64 notches from levelring to observe
     when testing the user on memory bytes
     :param today: datetime object
     :return: the mod(64) index into the spacelib.levelRing list
     '''
 
-    return (today - zeroday).days % 64
+    return (today - ZERODAY).days % 64
 
 
 def readSSD():
@@ -165,6 +179,7 @@ def quizMe(bytelist, idx):
     todayslvls = levelRing[idx]
 
     todaysBytes = [b for b in bytelist if b.level in set(todayslvls)]
+    shuffle(todaysBytes)
 
     for byte in todaysBytes:
         askQuest(byte)
@@ -187,13 +202,13 @@ def addBytes(bytelist):
     :param bytelist: list of byte instances
     :return: None
     '''
-    more = input("Would you like to add a new question? y / n\n")
+    more = input("Would you like to add a new question? ")
 
     while more == 'y':
         newb = newByte()
         bytelist.append(newb)
+        more = input("Would you like to add another question? ")
 
-        more = input("Would you like to add another question? y / n\n")
 
 
 def runMe():
@@ -222,3 +237,4 @@ def runMe():
     print("See you tomorrow!")
 
 
+## JBJB:  Text window with options and prompts from user
