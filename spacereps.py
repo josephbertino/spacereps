@@ -158,13 +158,18 @@ def lowerByte(byte):
     byte.level = 1
 
 
-def askQuest(byte):
+def askQuest(byte, idx, total):
     '''
     Quizzes the user on a byte. If they are correct, advance its level. Otherwise demote its level to 1.
     :param byte: the class byte instance
     :return: None
     '''
     os.system('clear')
+    print("************SPACEREPS**************")
+    print("-------------Quiz Me---------------")
+    print()
+
+    print("Question {} of {}\n".format(idx, total))
     print('[{}]: '.format(byte.level), byte.question)
     input("\nPress any key to see answer\n")
     print(byte.answer)
@@ -192,9 +197,10 @@ def quizMe(bytelist, idx):
 
     todaysBytes = [b for b in bytelist if b.level in set(todayslvls)]
     shuffle(todaysBytes)
+    total = len(todaysBytes)
 
-    for byte in todaysBytes:
-        if askQuest(byte) is False:
+    for idx, byte in enumerate(todaysBytes):
+        if askQuest(byte, idx+1, total) is False:
             # Terminate early
             return
 
@@ -204,8 +210,14 @@ def newByte():
     Create, initialize, and return a new byte instance
     :return: byte
     '''
+    os.system('clear')
+    print("************SPACEREPS**************")
+    print("----------Add Question-------------")
+    print()
+
     newb = byte()
     newb.question = input("Enter question: ")
+    print()
     newb.answer = input("Enter answer: ")
     return newb
 
@@ -216,12 +228,18 @@ def addBytes(bytelist):
     :param bytelist: list of byte instances
     :return: None
     '''
-    more = input("Would you like to add a new question? ")
+    os.system('clear')
+    print("************SPACEREPS**************")
+    print("----------Add Question-------------")
+    print()
+
+    more = 'y'
 
     while more == 'y':
         newb = newByte()
         bytelist.append(newb)
-        more = input("Would you like to add another question? ")
+        print()
+        more = input("(y/n) Would you like to add another question? : ")
 
 
 def topmenu(bytelist):
