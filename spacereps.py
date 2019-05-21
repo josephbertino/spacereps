@@ -7,10 +7,16 @@ import pickle
 from datetime import date
 from random import shuffle
 
+if len(sys.argv) != 2:
+    print("\nUsage: > python3 spacereps.py <memorybank>")
+    print("\n--- where <memorybank> refers to the name of the")
+    print("specific question list you wish to be quizzed from.")
+    input("\nPress any key to continue")
+    sys.exit(0)
 
 ZERODAY = date(2019, 4, 1)
-f_archive = "memory_tape"
-f_active = "memory_SSD"
+f_active = sys.argv[1] + "_active"
+f_archive = sys.argv[1] + "_archive"
 
 menuopts = {1: 'Quiz Me Today',
             2: 'Add Questions',
@@ -170,10 +176,10 @@ def askQuest(byte, idx, total):
     print()
 
     print("Question {} of {}\n".format(idx, total))
-    print('[{}]: '.format(byte.level), byte.question)
-    input("\nPress any key to see answer\n")
+    print("[{}]: ".format(byte.level),byte.question)
+    input("\n(Press any key to see answer)\n")
     print(byte.answer)
-    yn = input ("\nWere you correct? (y) or (n)\n")
+    yn = input ("\nWere you correct? (y) or (n): ")
 
     if yn == 'q':
         return False
@@ -239,7 +245,7 @@ def addBytes(bytelist):
         newb = newByte()
         bytelist.append(newb)
         print()
-        more = input("(y/n) Would you like to add another question? : ")
+        more = input("Would you like to add another question? (y) or (n): ")
 
 
 def topmenu(bytelist):
