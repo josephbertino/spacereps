@@ -8,8 +8,8 @@ from datetime import date
 from random import shuffle
 
 if len(sys.argv) != 2:
-    print("\nUsage: > python3 spacereps.py <memorybank>")
-    print("\n--- where <memorybank> refers to the name of the")
+    print("\nUsage: > python3 spacereps.py <quizset>")
+    print("\n--- where <quizset> refers to the name of the")
     print("specific question list you wish to be quizzed from.")
     input("\nPress any key to continue")
     sys.exit(0)
