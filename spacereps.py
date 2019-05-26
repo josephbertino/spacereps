@@ -164,6 +164,33 @@ def lowerByte(byte):
     byte.level = 1
 
 
+def editByte(byte):
+    '''
+    Allows the user to edit a byte. Automatically demotes byte to level==1
+    :param byte: the class byte instance
+    :return: None
+    '''
+    os.system('clear')
+    print("************SPACEREPS**************")
+    print("------------Edit Byte--------------")
+    print()
+
+    print("Byte Question: ", byte.question)
+    print()
+    print("Byte Answer: ", byte.answer)
+    print()
+    print()
+    byte.question = input("Enter new question: ")
+    print()
+    byte.answer = input("Enter new answer: ")
+    print()
+    byte.level = 1
+    print("Byte Updated!")
+    time.sleep(1)
+
+    return
+
+
 def askQuest(byte, idx, total):
     '''
     Quizzes the user on a byte. If they are correct, advance its level. Otherwise demote its level to 1.
@@ -183,8 +210,9 @@ def askQuest(byte, idx, total):
 
     if yn == 'q':
         return False
-
-    if yn == 'y':
+    elif yn == 'e':
+        editByte(byte)
+    elif yn == 'y':
         raiseByte(byte)
     else:
         lowerByte(byte)
