@@ -10,8 +10,6 @@ Each day you are also offered the opportunity to add new questions to the active
 
 I am going to get my Ham Radio license and want to try out this learning method to study for the test.
 
-I also want to get some real-world practice coding in Python.
-
 ## Build Status
 
 |**Text-Based** | **Runs**|
