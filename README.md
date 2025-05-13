@@ -11,10 +11,7 @@ Each day you are also offered the opportunity to add new questions to the active
 I am studying for my Amazon AWS Cloud Practitioner Certification.
 
 ## TODO
-- Create decorator to print header
-- Make bytelist global, or make a class
 - Ability to Delete Questions
-- Ability to Edit Questions
 - Advanced: Storage of questions in a DB
 
 ## Build Status

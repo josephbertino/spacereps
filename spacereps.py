@@ -23,8 +23,9 @@ f_archive_json = bytegroup + "_archive.json"
 
 menuopts = {1: "Quiz Me Today", 2: "Add Questions", 3: "Exit"}
 
+bytelist = []
 
-class byte:
+class Byte:
     """
     This class defines a single memory index card.
     """
@@ -60,22 +61,25 @@ def read_bytes_from_json(archive=False):
     :param bool archive:    Whether to retrieve the archived questions
     :return:                list of byte instances
     """
+    global bytelist
+
     fp = f_archive_json if archive else f_active_json
 
     if os.path.exists(fp):
         with open(f_active_json, "r") as f:
             data = json.load(f)
 
-    bytelist = [byte(d['level'], d['question'], d['answer']) for d in data]
-    return bytelist
+    bytelist = [Byte(d['level'], d['question'], d['answer']) for d in data]
 
 
-def write_bytes_to_json(bytelist, archive=False):
+def write_bytes_to_json(archive=False):
     """
     Saves all bytes in bytelist whose level < 7, by expanding attributes to list of dicts in JSON
 
-    :param list bytelist:
+    :param bool archive:    Write archive or active bytes?
     """
+    global bytelist
+
     if archive:
         fp = f_archive_json
         filtered_bytes = [b for b in bytelist if b.level > 7]
@@ -106,18 +110,29 @@ def kick_byte_level(byte):
     """
     byte.level = 1
 
+def print_game_header(heading):
+    def decorator(fn):
+        def wrapper(*args, **kwargs):
+            if os.name == 'nt':
+                os.system('cls')  # For Windows
+            else:
+                os.environ['TERM'] = 'xterm'  # Set TERM to 'xterm' for other platforms like macOS and Linux
+                os.system('clear')
+            print("************SPACEREPS**************")
+            print(f"------------{heading}--------------")
+            print()
+            if fn:
+                return fn(*args, **kwargs)
+        return wrapper
+    return decorator
 
+@print_game_header('Edit Byte')
 def edit_byte(byte):
     """
     Allows the user to edit a byte. Automatically demotes byte to level==1
 
     :param byte:    a byte instance
     """
-    os.system("clear")
-    print("************SPACEREPS**************")
-    print("------------Edit Byte--------------")
-    print()
-
     print("Byte Question: ", byte.question)
     print()
     print("Byte Answer: ", byte.answer)
@@ -132,19 +147,15 @@ def edit_byte(byte):
     time.sleep(1)
 
 
+@print_game_header('Quiz Me')
 def ask_question(byte, idx, total):
     """
     Quizzes the user on a byte. If they are correct, advance its level. Otherwise demote its level to 1.
 
-    :param byte byte: the class byte instance
+    :param Byte byte: the class byte instance
     :param int idx:
     :param int total:
     """
-    os.system("clear")
-    print("************SPACEREPS**************")
-    print("-------------Quiz Me---------------")
-    print()
-
     print(f"Question {idx} of {total}\n")
     print(f"[{byte.level}]: {byte.question}")
     input("\n(Press any key to see answer)\n")
@@ -163,51 +174,44 @@ def ask_question(byte, idx, total):
     return True
 
 
-def quiz_me(bytelist, idx):
+def quiz_me(idx):
     """
     Quiz the user on all bytes whose level is include in today's levelRing schedule
 
-    :param list(byte) bytelist:     the list of bytes
-    :param int idx:                 today's levelRing index
+    :param int idx:     Today's level_ring index
     """
-    todayslvls = level_rings[idx]
+    global bytelist
 
-    todaysBytes = [b for b in bytelist if b.level in set(todayslvls)]
-    shuffle(todaysBytes)
-    total = len(todaysBytes)
+    todays_levels = level_rings[idx]
 
-    for idx, byte in enumerate(todaysBytes):
-        if ask_question(byte, idx + 1, total) is False:
-            # Terminate early
+    todays_bytes = [b for b in bytelist if b.level in set(todays_levels)]
+    shuffle(todays_bytes)
+    total = len(todays_bytes)
+
+    for idx, byte in enumerate(todays_bytes):
+        retval = ask_question(byte, idx + 1, total)
+        if not retval:
             return
 
-
+@print_game_header('Add Question')
 def new_byte():
     """
     Create, initialize, and return a new byte instance
     :return: byte
     """
-    os.system("clear")
-    print("************SPACEREPS**************")
-    print("----------Add Question-------------")
+    new_byte = Byte()
+    new_byte.question = input("Enter question: ")
     print()
-
-    newb = byte()
-    newb.question = input("Enter question: ")
-    print()
-    newb.answer = input("Enter answer: ")
-    return newb
+    new_byte.answer = input("Enter answer: ")
+    return new_byte
 
 
-def add_bytes(bytelist):
+@print_game_header('Add Question')
+def add_bytes():
     """
     Extend the bytelist with new questions, prompting the user for each new addition
-    :param list(byte) bytelist: list of byte instances
     """
-    os.system("clear")
-    print("************SPACEREPS**************")
-    print("----------Add Question-------------")
-    print()
+    global bytelist
 
     more = "y"
 
@@ -218,37 +222,47 @@ def add_bytes(bytelist):
         more = input("Would you like to add another question? (y) or (n): ")
 
 
-def play(bytelist):
+@print_game_header('Main Menu')
+def menu_screen(idx):
+    """
+    :param int idx:     Today's levels_ring idx to get levels to quiz on
+    """
+    print_game_header('Main Menu')
+
+    print("Options:")
+    for key in sorted(menuopts):
+        print("{}. {}".format(key, menuopts[key]))
+
+    try:
+        choice = int(input("\nEnter choice: "))
+    except ValueError:
+        choice = 0
+
+    again = True
+    if choice not in menuopts.keys():
+        print("\nPlease try again...")
+        time.sleep(1)
+    elif choice == 1:
+        quiz_me(idx)
+        del menuopts[1]
+    elif choice == 2:
+        add_bytes()
+    elif choice == 3:
+        os.system("clear")
+        print("Thank you for quizzing!\nSee you tomorrow!")
+        time.sleep(1)
+        again = False
+    return again
+
+
+def play():
+    global bytelist
+
     idx = get_level_index(date.today())
 
-    while True:
-        os.system("clear")
-        print("************SPACEREPS**************")
-        print("------------Main Menu--------------")
-        print()
-
-        print("Options:")
-        for key in sorted(menuopts):
-            print("{}. {}".format(key, menuopts[key]))
-
-        try:
-            choice = int(input("\nEnter choice: "))
-        except ValueError:
-            choice = 0
-
-        if choice not in menuopts.keys():
-            print("\nPlease try again...")
-            time.sleep(1)
-        elif choice == 1:
-            quiz_me(bytelist, idx)
-            del menuopts[1]
-        elif choice == 2:
-            add_bytes(bytelist)
-        elif choice == 3:
-            os.system("clear")
-            print("Thank you for quizzing!\nSee you tomorrow!")
-            time.sleep(1)
-            return
+    go_again = True
+    while go_again:
+        go_again = menu_screen(idx)
 
 
 def main():
@@ -259,12 +273,12 @@ def main():
     Finally, archives any 'graduated' bytes and saves the rest back to disk.
     """
     try:
-        bytelist = read_bytes_from_json(archive=False)
+        read_bytes_from_json(archive=False)
     except IOError as e:
         raise e
-    play(bytelist)
-    write_bytes_to_json(bytelist, archive=True)
-    write_bytes_to_json(bytelist, archive=False)
+    play()
+    write_bytes_to_json(archive=True)
+    write_bytes_to_json(archive=False)
 
 
 if __name__ == "__main__":
