@@ -1,4 +1,4 @@
-#Python3
+# Python3
 
 import os
 import sys
@@ -6,84 +6,137 @@ import pickle
 from datetime import date
 import tkinter as tk
 
+
 class byte:
-    '''
+    """
     This class defines a single memory index card
-    '''
+    """
+
     def __init__(self):
         self.level = 1
         self.question = ""
         self.answer = ""
+
 
 zeroday = date(2019, 4, 1)
 f_archive = "spacerep_tape"
 f_active = "spacerep_SSD"
 
 # A list of 64 lists, following a specific pattern of spaced repetitions
-levelRing = [[2, 1], [3, 1], [2, 1], [4, 1],
-             [2, 1], [3, 1], [2, 1], [1],
-             [2, 1], [3, 1], [2, 1], [5, 1],
-             [4, 2, 1], [3, 1], [2, 1], [1],
-             [2, 1], [3, 1], [2, 1], [4, 1],
-             [2, 1], [3, 1], [2, 1], [6, 1],
-             [2, 1], [3, 1], [2, 1], [5, 1],
-             [4, 2, 1], [3, 1], [2, 1], [1],
-             [2, 1], [3, 1], [2, 1], [4, 1],
-             [2, 1], [3, 1], [2, 1], [1],
-             [2, 1], [3, 1], [2, 1], [5, 1],
-             [4, 2, 1], [3, 1], [2, 1], [1],
-             [2, 1], [3, 1], [2, 1], [4, 1],
-             [2, 1], [3, 1], [2, 1], [7, 1],
-             [2, 1], [3, 1], [6, 2, 1], [5, 1],
-             [4, 2, 1], [3, 1], [2, 1], [1]
-             ]
+levelRing = [
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [4, 1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [5, 1],
+    [4, 2, 1],
+    [3, 1],
+    [2, 1],
+    [1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [4, 1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [6, 1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [5, 1],
+    [4, 2, 1],
+    [3, 1],
+    [2, 1],
+    [1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [4, 1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [5, 1],
+    [4, 2, 1],
+    [3, 1],
+    [2, 1],
+    [1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [4, 1],
+    [2, 1],
+    [3, 1],
+    [2, 1],
+    [7, 1],
+    [2, 1],
+    [3, 1],
+    [6, 2, 1],
+    [5, 1],
+    [4, 2, 1],
+    [3, 1],
+    [2, 1],
+    [1],
+]
 
 
 def getDate():
-    '''
+    """
     Gets today's date, returns as a datetime object
     :return: datetime object (datetime.date(YYYY, MM, DD))
-    '''
+    """
 
     return date.today()
 
-#JBJB
+
+# JBJB
 def writeSSD(bytelist):
-    '''
+    """
     Saves all bytes in bytelist, whose level < 7, to the SSD file, by writing a pickle
     :param bytelist:
     :return: None
-    '''
+    """
 
     actives = [b for b in bytelist if b.level <= 7]
 
-    with open(f_active, 'w+b') as f:
+    with open(f_active, "w+b") as f:
         pickle.dump(actives, f)
 
 
 def archiveBytes(bytelist):
-    '''
+    """
     Pushes all bytes in bytelist, whose level > 7, to the archive file, by appending a pickle
     :param bytelist: list of instances of byte
     :return: None
-    '''
+    """
 
     retireds = [b for b in bytelist if b.level > 7]
 
-    with open(f_archive, 'a+b') as f:
+    with open(f_archive, "a+b") as f:
         if len(retireds) > 0:
-            pickle.dump(retireds,f)
+            pickle.dump(retireds, f)
 
 
 def readArchive():
-    '''
+    """
     Unpickles all archived memory bytes from the f_archive file
     :return: a list of all archived memory bytes
-    '''
+    """
     archive = []
 
     if os.path.exists(f_archive):
-        with open(f_archive, 'rb') as f:
+        with open(f_archive, "rb") as f:
             try:
                 while True:
                     pickles = pickle.load(f)
@@ -95,12 +148,11 @@ def readArchive():
     return archive
 
 
-
 def newByte():
-    '''
+    """
     Create, initialize, and return a new byte instance
     :return: byte
-    '''
+    """
     newb = byte()
     newb.question = input("Enter question: ")
     newb.answer = input("Enter answer: ")
@@ -108,14 +160,14 @@ def newByte():
 
 
 def addBytes(bytelist):
-    '''
+    """
     Extend the bytelist with new questions, prompting the user for each new addition
     :param bytelist: list of byte instances
     :return: None
-    '''
+    """
     more = input("Would you like to add a new question? y / n\n")
 
-    while more == 'y':
+    while more == "y":
         newb = newByte()
         bytelist.append(newb)
 
@@ -123,12 +175,12 @@ def addBytes(bytelist):
 
 
 def runMe():
-    '''
+    """
     The main program. First retrieves the active list of bytes. Quizzes the user on all bytes
     that are on today's schedule. Then surveys the user for new bytes to add to the active list.
     Finally, archives any 'graduated' bytes and saves the rest back to disk.
     :return: None
-    '''
+    """
 
     addBytes(bytelist)
 
@@ -137,8 +189,6 @@ def runMe():
     writeSSD(bytelist)
 
     print("See you tomorrow!")
-
-
 
 
 # [] screen 1: "start quiz" button to correspond with runMe()
@@ -152,12 +202,12 @@ class SpaceRepApp(tk.Frame):
     that are on today's schedule. Then surveys the user for new bytes to add to the active list.
     Finally, archives any 'graduated' bytes and saves the rest back to disk.
     """
+
     def __init__(self, master=None):
         super().__init__(master)
         self.master = master
         self.bytelist = []
         self.todayslvls = []
-
 
         self.getLvls(getDate())
         self.readSSD()
@@ -183,7 +233,7 @@ class SpaceRepApp(tk.Frame):
         """
         if os.path.exists(f_active):
             try:
-                with open(f_active, 'rb') as f:
+                with open(f_active, "rb") as f:
                     self.bytelist = pickle.load(f)
             except IOError:
                 print("Could not read", f_active)
@@ -191,22 +241,25 @@ class SpaceRepApp(tk.Frame):
 
     def printWelcome(self):
         msgtxt = "Welcome to the Spaced Repetition Program!"
-        msg = tk.Message(self.master, text=msgtxt, width=400, font=("Times", 20, "bold"))
+        msg = tk.Message(
+            self.master, text=msgtxt, width=400, font=("Times", 20, "bold")
+        )
         msg.pack(side="top")
 
     def arrangeMe(self):
         self.master.geometry("500x500")  # adjust dimensions of main window
         self.master.geometry("+90+90")  # adjust position on screen
-        self.master.attributes("-topmost", True) # bring to front of application windows
+        self.master.attributes(
+            "-topmost", True
+        )  # bring to front of application windows
 
     def create_widgets(self):
-        self.quizbtn = tk.Button(self, width='40')
+        self.quizbtn = tk.Button(self, width="40")
         self.quizbtn["text"] = "Quiz Me Today!"
         self.quizbtn["command"] = self.quizMe
         self.quizbtn.pack(side="top")
 
-        self.quit = tk.Button(self, text="QUIT", fg="red",
-                              command=self.master.destroy)
+        self.quit = tk.Button(self, text="QUIT", fg="red", command=self.master.destroy)
         self.quit.pack(side="bottom")
 
     def quizMe(self):
@@ -221,10 +274,9 @@ class SpaceRepApp(tk.Frame):
         bnum = len(todaysBytes)
 
         for i, byte in enumerate(todaysBytes):
-            self.askQuest(byte, i+1, bnum)
+            self.askQuest(byte, i + 1, bnum)
 
         # JBJB [] once all questions are asked, remove the QUIZ ME button and put the 'new questions' button
-
 
     def askQuest(self, byte, i, bnum):
         # JBJB [] implement this as a separate class instance?
@@ -237,16 +289,17 @@ class SpaceRepApp(tk.Frame):
         win = tk.Toplevel()
         win.wm_title("Question {} of {}".format(i, bnum))
         win.geometry("500x500+100+100")
-        win.attributes("-topmost", True) # bring to front of application windows
+        win.attributes("-topmost", True)  # bring to front of application windows
 
         qlab = tk.Label(win, text=byte.question)
         qlab.pack(side="top")
 
-        revealbtn = tk.Button(win, text='Flip Card')
+        revealbtn = tk.Button(win, text="Flip Card")
         revealbtn["command"] = win.destroy
         revealbtn.pack(side="bottom")
 
-'''
+
+"""
         print('[{}]: '.format(byte.level), byte.question)
         input("\nPress any key to see answer")
         print(byte.answer)
@@ -256,7 +309,7 @@ class SpaceRepApp(tk.Frame):
         else:
             lowerByte(byte)
         return
-'''
+"""
 
 
 root = tk.Tk()
@@ -265,18 +318,18 @@ tkgame.mainloop()
 
 
 def raiseByte(byte):
-    '''
+    """
     Increases a byte's commitment level by 1
     :param byte: the class byte instance
     :return: None
-    '''
+    """
     byte.level += 1
 
 
 def lowerByte(byte):
-    '''
+    """
     Decreases a byte's commitment level back to 1, the ground floor
     :param byte: the class byte instance
     :return: None
-    '''
+    """
     byte.level = 1

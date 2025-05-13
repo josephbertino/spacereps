@@ -2,13 +2,20 @@
 
 A small memory-training index card tool, rooted in the learning technique [Spaced Repetition](https://en.wikipedia.org/wiki/Spaced_repetition).
 
-Every day that you use the tool, it will quiz you on a subset of questions ("bytes" as I call them in the program's code) stored in the 'active' database. Questions you answer correctly will advanced by one level, which means you won't see that question again for a longer period of time. Questions you answer incorrectly will be demoted to Level 1, and you will be quizzed on them tomorrow. Once a question progresses past Level 7, it will be archived, and you will no longer be quizzed on it.
+Every day that you use the tool, it will quiz you on a subset of questions ("bytes" as I call them in the program's code) stored in the 'active' database. Questions you answer correctly will advance by one level, which means you won't see that question again for a longer period of time. Questions you answer incorrectly will be demoted to Level 1, and you will be quizzed on them tomorrow. Once a question progresses past Level 7, it will be archived, and you will no longer be quizzed on it.
 
 Each day you are also offered the opportunity to add new questions to the active database. These questions are initially set to Level 1.
 
 ## Motivation
 
-I am going to get my Ham Radio license and want to try out this learning method to study for the test.
+I am studying for my Amazon AWS Cloud Practitioner Certification.
+
+## TODO
+- Create decorator to print header
+- Make bytelist global, or make a class
+- Ability to Delete Questions
+- Ability to Edit Questions
+- Advanced: Storage of questions in a DB
 
 ## Build Status
 
