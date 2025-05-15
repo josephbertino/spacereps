@@ -160,18 +160,21 @@ def ask_question(byte, idx, total):
     print(f"[{byte.level}]: {byte.question}")
     input("\n(Press any key to see answer)\n")
     print(byte.answer)
-    yn = input("\nWere you correct? (y) or (n): ").lower().strip()[0]
+    response = input("\nWere you correct? (y) or (n): ").lower().strip()
 
-    if yn == "q":
-        return False
-    elif yn == "e":
+    keep_going = True
+
+    if 'q' in response:
+        keep_going = False
+    if 'e' in response:
         edit_byte(byte)
-    elif yn == "y":
+
+    if 'y' in response:
         raise_byte_level(byte)
-    else:
+    elif 'n' in response:
         kick_byte_level(byte)
 
-    return True
+    return keep_going
 
 
 def quiz_me(idx):
