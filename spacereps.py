@@ -218,13 +218,13 @@ def add_bytes():
     """
     global bytelist
 
-    more = "y"
+    response = ""
 
-    while more == "y":
+    while 'n' not in response:
         newb = new_byte()
         bytelist.append(newb)
         print()
-        more = input("Would you like to add another question? (y) or (n): ")
+        response = input("Would you like to add another question? (y) or (n): ").lower().strip()
 
 
 @print_game_header('Main Menu')
