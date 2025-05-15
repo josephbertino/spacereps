@@ -169,10 +169,12 @@ def ask_question(byte, idx, total):
     if 'e' in response:
         edit_byte(byte)
 
-    if 'y' in response:
-        raise_byte_level(byte)
-    elif 'n' in response:
+    if 'n' in response:
         kick_byte_level(byte)
+    else:
+        # By default, assume correct
+        raise_byte_level(byte)
+
 
     return keep_going
 
