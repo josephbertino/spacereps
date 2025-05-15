@@ -187,7 +187,7 @@ def quiz_me(idx):
 
     todays_levels = level_rings[idx]
 
-    todays_bytes = [b for b in bytelist if b.level in set(todays_levels)]
+    todays_bytes = [b for b in bytelist if b.level in set(todays_levels)][:15]
     shuffle(todays_bytes)
     total = len(todays_bytes)
 
