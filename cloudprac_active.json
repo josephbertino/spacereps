@@ -87,4 +87,5 @@
 	{"level": 1, "question": "True / False: AWS Config is a service that provides a detailed view of AWS resource configurations in your AWS account.", "answer": "True."},
 	{"level": 1, "question": "A company wants to quickly deploy duplicate infrastructure in a different AWS Region to create global redundancy. Which AWS service will meet this requirement?", "answer": "AWS CloudFormation enables you to reuse resource provisioning templates to spin up resources in multiple AZs and Regions."}, 
 	{"level": 1, "question": "Which services can be used to deploy applications on AWS?", "answer": "AWS ElasticBeanstalk."}, 
-	{"level": 1, "question": "What tool is used to mount a shared file system, but NOT an operating system?", "answer": "Elastic File System."}, ]
+	{"level": 1, "question": "What tool is used to mount a shared file system, but NOT an operating system?", "answer": "Elastic File System."}
+]
