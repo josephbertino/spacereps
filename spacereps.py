@@ -5,8 +5,7 @@ import json
 from datetime import date
 from random import shuffle
 
-from consts import level_rings
-
+from consts import level_rings, ZERODAY, LEVEL, QUESTION, ANSWER, LAST_SEEN, NUM_QUESTIONS_PER_QUIZ
 
 if len(sys.argv) != 2:
     print("\nInvocation: > python spacereps.py <quizset>")
@@ -15,13 +14,13 @@ if len(sys.argv) != 2:
     sys.exit(0)
 
 # Arbitrarily chosen day to anchor the spacing of bytes
-ZERODAY = date(2019, 4, 1)
+TODAYS_ORDINAL = date.today().toordinal()
 
 bytegroup = sys.argv[1]
 f_active_json = bytegroup + "_active.json"
 f_archive_json = bytegroup + "_archive.json"
 
-menuopts = {1: "Quiz Me Today", 2: "Add Questions", 3: "Exit"}
+menuopts = {1: "Quiz Me", 2: "Add Questions", 3: "Exit"}
 
 bytelist = []
 
@@ -30,7 +29,7 @@ class Byte:
     This class defines a single memory index card.
     """
 
-    def __init__(self, level=1, question='', answer=''):
+    def __init__(self, level=1, question='', answer='', last_seen=0):
         """
         A new byte has level=1 so that you get quizzed on it most frequently,
         until you answer it correctly, at which point its level will increase and
@@ -39,19 +38,19 @@ class Byte:
         self.level = level
         self.question = question
         self.answer = answer
+        self.last_seen = last_seen
 
 
-def get_level_index(today):
+def get_level_index():
     """
     Finds difference (# of days) between 'today' and the 'ZERODAY' date,
     to compute which of the 64 levels from levelring to observe
     when testing the user on memory bytes
 
-    :param datetime.date today: datetime object
     :return int: the mod(64) index into the spacelib.levelRing list
     """
 
-    return (today - ZERODAY).days % 64
+    return (date.today() - ZERODAY).days % 64
 
 
 def read_bytes_from_json(archive=False):
@@ -69,7 +68,13 @@ def read_bytes_from_json(archive=False):
         with open(f_active_json, "r") as f:
             data = json.load(f)
 
-    bytelist = [Byte(d['level'], d['question'], d['answer']) for d in data]
+    bytelist = [
+        Byte(
+            level=d[LEVEL],
+            question=d[QUESTION],
+            answer=d[ANSWER],
+            last_seen=d[LAST_SEEN]
+        ) for d in data]
 
 
 def write_bytes_to_json(archive=False):
@@ -87,7 +92,9 @@ def write_bytes_to_json(archive=False):
         fp = f_active_json
         filtered_bytes = [b for b in bytelist if b.level <= 7]
 
-    filtered_bytes_expanded = [{'level': b.level, 'question': b.question, 'answer': b.answer} for b in filtered_bytes]
+    filtered_bytes_expanded = [
+        {LEVEL: b.level, QUESTION: b.question, ANSWER: b.answer, LAST_SEEN: b.last_seen}
+        for b in filtered_bytes]
 
     with open(fp, "w") as f:
         json.dump(filtered_bytes_expanded, f)
@@ -111,6 +118,9 @@ def kick_byte_level(byte):
     byte.level = 1
 
 def print_game_header(heading):
+    """
+    Boilerplate for printing game header
+    """
     def decorator(fn):
         def wrapper(*args, **kwargs):
             if os.name == 'nt':
@@ -147,6 +157,10 @@ def edit_byte(byte):
     time.sleep(1)
 
 
+def set_last_seen(byte):
+    byte.last_seen = TODAYS_ORDINAL
+
+
 @print_game_header('Quiz Me')
 def ask_question(byte, idx, total):
     """
@@ -175,11 +189,12 @@ def ask_question(byte, idx, total):
         # By default, assume correct
         raise_byte_level(byte)
 
+    set_last_seen(byte)
 
     return keep_going
 
 
-def quiz_me(idx):
+def quiz_me():
     """
     Quiz the user on all bytes whose level is include in today's levelRing schedule
 
@@ -187,13 +202,20 @@ def quiz_me(idx):
     """
     global bytelist
 
-    todays_levels = level_rings[idx]
+    # Today's levels_ring idx to get levels to quiz on
+    todays_levels = set(level_rings[get_level_index()])
 
-    todays_bytes = [b for b in bytelist if b.level in set(todays_levels)][:15]
-    shuffle(todays_bytes)
-    total = len(todays_bytes)
+    shuffle(bytelist)
+    quiz_bytes = [b for b in bytelist if (b.level in todays_levels) and (b.last_seen != TODAYS_ORDINAL)]
+    quiz_bytes = quiz_bytes[:NUM_QUESTIONS_PER_QUIZ]
 
-    for idx, byte in enumerate(todays_bytes):
+    total = len(quiz_bytes)
+
+    if not quiz_bytes:
+        # TODO print out no more bytes for today
+        pass
+
+    for idx, byte in enumerate(quiz_bytes):
         retval = ask_question(byte, idx + 1, total)
         if not retval:
             return
@@ -228,11 +250,7 @@ def add_bytes():
 
 
 @print_game_header('Main Menu')
-def menu_screen(idx):
-    """
-    :param int idx:     Today's levels_ring idx to get levels to quiz on
-    """
-    print_game_header('Main Menu')
+def menu_screen():
 
     print("Options:")
     for key in sorted(menuopts):
@@ -248,7 +266,7 @@ def menu_screen(idx):
         print("\nPlease try again...")
         time.sleep(1)
     elif choice == 1:
-        quiz_me(idx)
+        quiz_me()
         del menuopts[1]
     elif choice == 2:
         add_bytes()
@@ -261,13 +279,8 @@ def menu_screen(idx):
 
 
 def play():
-    global bytelist
-
-    idx = get_level_index(date.today())
-
-    go_again = True
-    while go_again:
-        go_again = menu_screen(idx)
+    while menu_screen():
+        pass
 
 
 def main():
@@ -281,7 +294,9 @@ def main():
         read_bytes_from_json(archive=False)
     except IOError as e:
         raise e
+
     play()
+
     write_bytes_to_json(archive=True)
     write_bytes_to_json(archive=False)
 

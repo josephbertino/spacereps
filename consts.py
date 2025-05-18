@@ -7,6 +7,8 @@ you will be quizzed on the active bytes whose levels correspond to that day's in
 
 i.e. if today's index is 3, you will only see bytes with levels 4 and 1.
 """
+from datetime import date
+
 level_rings = [
     [2, 1],
     [3, 1],
@@ -73,3 +75,10 @@ level_rings = [
     [2, 1],
     [1],
 ]
+
+ZERODAY = date(2019, 4, 1)
+LEVEL = 'level'
+QUESTION = 'question'
+ANSWER = 'answer'
+LAST_SEEN = 'last_seen'
+NUM_QUESTIONS_PER_QUIZ = 16
