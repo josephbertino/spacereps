@@ -97,7 +97,7 @@ def write_bytes_to_json(archive=False):
         for b in filtered_bytes]
 
     with open(fp, "w") as f:
-        json.dump(filtered_bytes_expanded, f)
+        json.dump(filtered_bytes_expanded, f, indent=2)
 
 
 def raise_byte_level(byte):
