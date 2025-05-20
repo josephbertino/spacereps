@@ -610,5 +610,77 @@
     "question": "AWS Elastic Block Store snapshots are _____ data backups.",
     "answer": "Incremental.",
     "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What AWS service gives customers the ability to audit and monitor changes in AWS resources?",
+    "answer": "AWS Config.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "To reduce operational overhead use a fully _______ service.",
+    "answer": "Managed.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What AWS service allows you to define and provision infrastructure resources using templates, for easy deployment of replicated Amazon EC2 instances?",
+    "answer": "AWS CloudFormation.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What two services should a user take advantage of to launch a new RDS cluster?",
+    "answer": "CloudFormation; Management Console.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service helps to automate common admin tasks and perform one-time config changes at scale on EC2 instances?",
+    "answer": "AWS System Manager. Remotely and securely manage the configuration of your managed instances.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which Pillar of the Well-Architected Framework focuses on the ability of a workload to CONSISTENTLY and CORRECTLY perform its intended function?",
+    "answer": "Reliability.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service provides intelligent threat detection for your AWS infrastructure and resources, and continually monitors network activity and account behavior?",
+    "answer": "GuardDuty.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service monitors network requests for web applications?",
+    "answer": "AWS Web Access Firewall.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What resource controls all inbound and outbound traffic for Amazon EC2 instances, acts as a Stateful Virtual Firewall, and by default Denies all inbound and outbound traffic?",
+    "answer": "A Security Group.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What AWS service is a connection between a Virtual Public Cloud and the internet, and allows public internet traffic to access the Virtual Public Cloud?",
+    "answer": "An Internet Gateway.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What AWS service is an enterprise-class relational database?",
+    "answer": "Aurora.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What is the maximum number of objects that an S3 server can store?",
+    "answer": "There is no limit!",
+    "last_seen": 0
   }
 ]
