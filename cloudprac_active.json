@@ -532,5 +532,77 @@
     "question": "Are Security Groups STATELESS or STATEFUL?",
     "answer": "Security Groups (Network Access Control List for EC2 Instances) are STATEFUL, and by default they deny all inbound and outbound traffic.",
     "last_seen": 739388
+  },
+  {
+    "level": 1,
+    "question": "What architecture design principle applies to the concept of rightsizing the AWS Cloud Infrastructure?",
+    "answer": "Optimize for Cost. Select the right size and type of resources running your workload by analyzing usage metrics on that workload.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service should be used to monitor Amazon EC2 instances for CPU and network utilization?",
+    "answer": "Amazon ICloudWatch. CloudWatch monitors resources and collects real-time logs. The logs can give you insight on your resource's overall health. With the CloudWatch agent installed on an EC2 instance, you can monitor your EC2 instances for CPU and network utilization.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "A company hosts an application on an Amazon EC2 instance. The EC2 instance needs to access several AWS resources, including Amazon S3 and Amazon DynamoDB. What is the MOST operationally efficient solution to delegate permissions?",
+    "answer": "Create an IAM role with the required permissions. Attach the role to the EC2 instance. This will provision access to the AWS resources.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service can help a company detect an outage of its website servers and redirect users to alternate servers?",
+    "answer": "Amazon Route 53. Route 53 resolves domain names to IP addresses through records. You can also use Route 53 routing policies for failover routing to another set of resources. (This implies that Route 53 can detect when there is an outage with a resource, presumably by observing that the resource cannot be accessed over the internet).",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "A web developer is concerned that a DDoS attack could target an application. Which AWS services or features can help protect against such an attack?",
+    "answer": "AWS Shield (for protection against DDoS); Amazon CloudFront (Shield Standard exists on CloudFront and Amazon Route 53).",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "A cloud practitioner is developing a disaster recovery plan and intends to replicate data between multiple geographic areas. Which component of the AWS Cloud should the company use to meet these requirements?",
+    "answer": "AWS Regions. Regions are named sets of Availability Zones.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "A company has an Amazon EC2 instance that must access AWS Secreets Manager to retrieve credentials. Which identity or service is required by the EC2 instance to perform this task?",
+    "answer": "IAM role. The EC2 instance will require an instance profile associated with an IAM role to be able to access Secrets Manager. The IAM role will provide the necessary permissions to the EC2 instance.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which of the following will help a user determine if they need to request a VPC service limit increase?",
+    "answer": "AWS Trusted Advisor. Trusted Advisor performs many checks on your AWS environment and makes recommendations for improvement. One of these checks includes VPC service limit checks, which you can use to determine if you need a VPC service limit.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What is a benefit of moving to the AWS Cloud in terms of improving time to market?",
+    "answer": "Increased business agility.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "True / False: Providing Awareness Training is the responsibility only of AWS customers.",
+    "answer": "False. Providing awareness and training is a shared responsibility between the user and AWS. AWS trains their employees, and the user trains their employees.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Can IAM groups be nested within other groups?",
+    "answer": "No. An IAM group can only contain users, not other groups.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "A company wants to improve its security and audit posture by limiting Amazon EC2 inbound access. What should the company use to access instances remotely instead of opening inbound SSh ports and managing SSH keys?",
+    "answer": "AWS Systems Manager Session Manager. Session Manager is a node management service for the cloud or for on-premises compute units. Session Manager provides a secure connection through shell scripting. You can establish the connection without the need to open ports.",
+    "last_seen": 0
   }
 ]
