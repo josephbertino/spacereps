@@ -1,1 +1,536 @@
-[{"level": 2, "question": "What tool is used to mount a shared file system, but NOT an operating system?", "answer": "Elastic File System.", "last_seen": 739390}, {"level": 1, "question": "Which AWS Hybrid Storage service enables a user's on-premisis applications to seamlessly use AWS Cloud storage?", "answer": "Storage Gateway.", "last_seen": 739390}, {"level": 4, "question": "Are Security Groups STATELESS or STATEFUL?", "answer": "Security Groups (Network Access Control List for EC2 Instances) are STATEFUL, and by default they deny all inbound and outbound traffic.", "last_seen": 739388}, {"level": 1, "question": "Which perspective of the AWS Cloud Adoption Framework connects technology and business?", "answer": "People. The people perspective helps transform your cloud migration with continuous learning.", "last_seen": 739390}, {"level": 3, "question": "Which AWS service provides on-demand downloads of third-party assessments of security and compliance responsibilities, and of AWS security and compliance documents?", "answer": "AWS Artifact.", "last_seen": 739390}, {"level": 3, "question": "A company wants to quickly deploy duplicate infrastructure in a different AWS Region to create global redundancy. Which AWS service will meet this requirement?", "answer": "AWS CloudFormation enables you to reuse resource provisioning templates to spin up resources in multiple AZs and Regions.", "last_seen": 739390}, {"level": 2, "question": "What tool can be used to help AWS customers identify ways to improve workloads, including aligning with best practices, becoming more cost-effective, and becoming more reliable?", "answer": "AWS Well-Architected Tool.", "last_seen": 739390}, {"level": 1, "question": "What AWS service is a fully managed AWS data security and data privacy service that uses ML to discover, monitor, and protect your sensitive data in AWS, particularly S3?", "answer": "Amazon Macie.", "last_seen": 739390}, {"level": 2, "question": "Which AWS service is a hardware device or virtual software appliance used for hybrid cloud storage with local caching, and without changing storage protocols or technology?", "answer": "Storage Gateway.", "last_seen": 739390}, {"level": 3, "question": "Which service can be used to backup on-prem storage of virtual machines and storage gateway volumes, providing a centralized console to automate and manage backups across AWS compute, database, and storage services?", "answer": "AWS Backup.", "last_seen": 739390}, {"level": 2, "question": "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruption. What is the most cost-effective option for this task?", "answer": "On-Demand.", "last_seen": 739390}, {"level": 3, "question": "How many Availability Zones does a Region consist of?", "answer": "At least 3", "last_seen": 739390}, {"level": 3, "question": "A company is going through a compliance inspection for ISO 20017. Which AWS service or tool can the company use to download the ISO certifications?", "answer": "AWS Artifact. You use Artifact to download third-party assessments of AWS security and compliance postures.", "last_seen": 739390}, {"level": 3, "question": "What AWS service is a \"lift and shift\" solution, enabling migration of any physical servers as well as databases and applications to an Amazon EC2 instance?", "answer": "AWS Application Migration Service.", "last_seen": 739390}, {"level": 4, "question": "What EC2 Plan is good for hourly spend committment for an EC2 family and region, for a 1- or 3-year term?", "answer": "EC2 Instance Savings Plan", "last_seen": 739388}, {"level": 2, "question": "A user must encrypt data that is received, stored, and managed by AWS CloudTrail. Which service provides this capability?", "answer": "AWS Key Management Service enables server-side encryption of CloudTrail data.", "last_seen": 739390}, {"level": 1, "question": "Name the service that allows you to: Access compliance reports on demand; review, accept, and manage agreements in AWS.", "answer": "AWS Compliance.", "last_seen": 739390}, {"level": 3, "question": "Which AWS service tests the network accessibility of EC2 instances and the security state of the applications that run on those instances?", "answer": "AWS Inspector.", "last_seen": 739390}, {"level": 2, "question": "What connects a Virtual Public Cloud (VPC) to the public internet?", "answer": "An Internet Gateway", "last_seen": 739388}, {"level": 1, "question": "Which AWS service allows users to provision infrastructure as code?", "answer": "CloudFormation. Enables users to spin up resources rapidly with JSON or YAML config files.", "last_seen": 739388}, {"level": 1, "question": "True / False: When an EC2 Instance is stopped, billing for that instance stops, but any attached EBS Storage continues to be billed.", "answer": "True.", "last_seen": 739388}, {"level": 2, "question": "What Amazon Storage service is great for hosting static web files, music videos, music files, etc.?", "answer": "S3 (Simple Storage Service)", "last_seen": 739388}, {"level": 1, "question": "Which services can be used to deploy applications on AWS?", "answer": "AWS ElasticBeanstalk.", "last_seen": 739388}, {"level": 1, "question": "A company needs to deploy an Amazon EC2 instance and attach a storage mount for the operating system and application files. Which AWS service will meet these requirements?", "answer": "Elastic Block Storage. You can use AWS EBS to mount operating systems and applications.", "last_seen": 739388}, {"level": 1, "question": "What Amazon ML service provides language translation?", "answer": "Amazon Translate", "last_seen": 739388}, {"level": 1, "question": "Which AWS service or feature can be used to block network access to a specific port on EC2 instances?", "answer": "Network ACL (of the subnet)", "last_seen": 739388}, {"level": 1, "question": "Which AWS service helps users to collect, process, and analyze real-time streaming data from sources including operating logs, financial transactions, and social media feeds?", "answer": "Amazon Kinesis.", "last_seen": 739389}, {"level": 2, "question": "True / False: A Subnet can span Availability Zones.", "answer": "False. A Subnet must reside entirely within one Availability Zone.", "last_seen": 739389}, {"level": 2, "question": "A cloud practitioner needs to recommend a data visualization tool for analysts to create user-friendly business intelligence insights. What service should the cloud practitioner recommend?", "answer": "Amazon QuickSight", "last_seen": 739389}, {"level": 1, "question": "A _____ is a virtual firewall that controls traffic to and from AWS resources.", "answer": "Security Group.", "last_seen": 739388}, {"level": 2, "question": "What AWS Cloud Adoption Framework perspective deals with the protection of data, applications, and resources, dealing with topics like access management, threat detection, and data protection?", "answer": "Security.", "last_seen": 739389}, {"level": 1, "question": "What AWS service protects against DDoS attacks?", "answer": "AWS Shield.", "last_seen": 739388}, {"level": 1, "question": "Which controls or features are shared controls according to the AWS shared responsibility model?", "answer": "1) Patch Management (AWS will patch and fix flaws within the infrastructure, and the customer must patch their guest OS and applications; 2) Configuration management (same deal as #1)", "last_seen": 739388}, {"level": 1, "question": "Which AWS service should be used to implement encryption in transit?", "answer": "AWS Certificate Manager (ACM).", "last_seen": 739388}, {"level": 2, "question": "Name a serverless key-value database service.", "answer": "DynamoDB.", "last_seen": 739388}, {"level": 2, "question": "True or False: An AWS Elastic Load Balancer can route traffic to different targets across different regions.", "answer": "False: An Elastic Load Balancer can only distribute traffic to instances and resources within a single region, but across Availability Zones.", "last_seen": 739389}, {"level": 1, "question": "A company has an on-premises Linux-based server with an Oracle database that runs on it. The company wants to migrate the database server to run on an EC2 Instance. What service should the company use to complete the migration?", "answer": "AWS Application Migration Service", "last_seen": 739389}, {"level": 2, "question": "Which service makes it easy to create and manage cryptographic keys and control their use across a wide range of AWS services?", "answer": "AWS Key Management Service.", "last_seen": 739389}, {"level": 2, "question": "What AWS service protects web applications, and allows you to define rules that block attacks such as cross-site scripting?", "answer": "AWS Web Access Firewall (WAF).", "last_seen": 739389}, {"level": 2, "question": "What resource is a fast and scalable data warehouse that gives you the ability to analyse real-time data?", "answer": "AWS RedShift.", "last_seen": 739389}, {"level": 1, "question": "Which service is a highly scalable DNS web service?", "answer": "Route 53.", "last_seen": 739388}, {"level": 2, "question": "True / False: Elastic File Storage stores data across multiple Availability Zones.", "answer": "True.", "last_seen": 739388}, {"level": 2, "question": "True / False: EBS stores data in multiple Availability Zones.", "answer": "False. Elastic Block Storage stores data in only one Availability Zone.", "last_seen": 739388}, {"level": 2, "question": "How do you access a Private Subnet securely from a corporate data center over the public internet?", "answer": "Connecting to a Virtual Private Gateway over VPN.", "last_seen": 739389}, {"level": 2, "question": "Fill in the blank: Snowball Edge Storage Optimized can store ___ TB HDD or ___ TB SDD.", "answer": "Snowball Edge Storage Optimized can store 80 TB HDD or 1 TB SDD.", "last_seen": 739388}, {"level": 2, "question": "Which service helps users meet contractual and regulatory compliance requirements for data security by using dedicated hardware appliances within the cloud?", "answer": "AWS Cloud Hardware Security Module (HSM) helps you comply with corporate, contractual, and regulatory compliance requirements for data security by using dedicate hardware to store secure data.", "last_seen": 739389}, {"level": 2, "question": "True / False: Amazon Inspector is an automated security and compliance assessment service in AWS that can perform classification of data in S3 buckets.", "answer": "False. While it is an automated security and compliance assessment service, Amazon Inspector does not perform data classification in S3 or automatic discovery.", "last_seen": 739389}, {"level": 1, "question": "A company wants to create a learning application for students. The application must read text out loud. What AWS ML service will fulfill this requirement?", "answer": "AWS Polly", "last_seen": 739388}, {"level": 1, "question": "True / False: AWS Config is a service that provides a detailed view of AWS resource configurations in your AWS account.", "answer": "True.", "last_seen": 739388}, {"level": 1, "question": "True / False: Reserved EC2 Instances have a minimum 30 day committment.", "answer": "False. Reserved Instances have a minimum 1 year committment.", "last_seen": 739388}, {"level": 2, "question": "What EC2 instance would be best suited for Batch Processing jobs?", "answer": "A Compute instance.", "last_seen": 739388}, {"level": 2, "question": "True or False: When you modify a file in block storage, only the pieces that changed are updated.", "answer": "True. But when a file in object storage is modified, the entire object is updated.", "last_seen": 739388}, {"level": 2, "question": "What level AWS Support Plan provides ALL Trusted Advisor checks at the lowest cost to the subscriber?", "answer": "BUSINESS Support Plan.", "last_seen": 739388}, {"level": 2, "question": "Which perspective of the AWS Cloud Adoption Framework makes sure that your cloud services meet your business needs?", "answer": "Operations.", "last_seen": 739389}, {"level": 1, "question": "What AWS service stores and manages configuration data, including passwords, DB strings, and sensitive information?", "answer": "AWS SYSTEMS MANAGER PARAMETER STORE.", "last_seen": 739388}, {"level": 2, "question": "What S3 classes are for archival data?", "answer": "S3 Glacier Storage", "last_seen": 739388}, {"level": 1, "question": "What is required to enable internet access for instances in a Public Subnet?", "answer": "Configure a Route Table with a 0.0.0.0/0 CIDR block on the Internet Gateway.", "last_seen": 739389}, {"level": 2, "question": "Define a SUBNET.", "answer": "The section of a Virtual Public or Private Cloud that isolates a group of resources and sets rules for allowed network traffic. Resources in the subnet are grouped based on security or operational needs. Can be public or private.", "last_seen": 739388}, {"level": 1, "question": "What service is an omnichannel cloud contact center to help you provide customer service at a lower cost?", "answer": "Amazon Connect.", "last_seen": 739388}, {"level": 2, "question": "Would static storage w/ few changes favor EBS or S3?", "answer": "S3 Object Storage.", "last_seen": 739388}, {"level": 1, "question": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. Which service should they use?", "answer": "Amazon Macie.", "last_seen": 739389}, {"level": 2, "question": "What Amazon service provides centralized governance and billing for an AWS environment, including multiple accounts?", "answer": "AWS Organizations", "last_seen": 739389}, {"level": 1, "question": "What AWS service scans your AWS environment for software vulnerabilities and network exposure?", "answer": "AWS Inspector", "last_seen": 739388}, {"level": 1, "question": "A company needs to establish an AWS Site-to-Site VPN tunnel. Which type of gateway should the company use?", "answer": "Virtual Private Gateway.", "last_seen": 739388}, {"level": 1, "question": "Which AWS service identifies security groups that allows unrestricted access to a user's AWS resources?", "answer": "AWS Trusted Advisor", "last_seen": 739388}, {"level": 2, "question": "What AWS Pricing Model offers lower prices on Compute and Machine Learning across any AWS Region?", "answer": "Savings Plan.", "last_seen": 739389}, {"level": 1, "question": "What is the minimum AWS Support Plan that is required for 24/7 access to enhanced Technical Support?", "answer": "The AWS BUSINESS Support Plan.", "last_seen": 739388}, {"level": 1, "question": "A company wants assistance and guidance with the initial design and deployment of services on AWS. What 2 services should they use for help with that?", "answer": "AWS Marketplace; AWS Partners.", "last_seen": 739389}, {"level": 1, "question": "What service provides a target in VPC route tables for internet-routable traffic?", "answer": "An Internet Gateway", "last_seen": 739388}, {"level": 2, "question": "Which service gives customers the ability to audit and monitor changes in AWS resources?", "answer": "AWS Config.", "last_seen": 739389}, {"level": 2, "question": "True / False: In AWS Organizations, you Ccannot apply service control policies to the organization root.", "answer": "False. In AWS Organizations, you CAN apply Service Control Policies to the following: organization root; an individual member's account; an entire Organization Unit (OU).", "last_seen": 739388}, {"level": 2, "question": "True or False: Relational Database Service can be implemented in Amazon Aurora.", "answer": "True. Amazon Aurora is an Enterprise-level Relational Database Management System.", "last_seen": 739388}, {"level": 2, "question": "Name the service that protects against DDoS attacks from the public internet.", "answer": "AWS Shield.", "last_seen": 739388}, {"level": 2, "question": "Would complex read/write/change operations favor using Elastic Block Storage or Amazon S3?", "answer": "EBS, since only the pieces that change would get updated, and the rest of the file could remain unchanged.", "last_seen": 739388}, {"level": 1, "question": "Which AWS service runs containers without the need to provision and manage Amazon EC2 instances?", "answer": "Fargate. Fargate is a serverless servics which, with Amazon Elastic Container Service, allows you to run containers without needing to provision or manage servers.", "last_seen": 739388}, {"level": 1, "question": "Name the AWS service that checks security groups for rules that allow unrestricted access to a resource, which increases opportunities for malicious activity like hacking and denial of service?", "answer": "AWS Trusted Advisor", "last_seen": 739388}, {"level": 2, "question": "True / False: Accounts in Organizational Units can be provisioned access through user, group, and role permissions.", "answer": "True.", "last_seen": 739388}, {"level": 1, "question": "True / False: By default, Virtual Public Clouds are configured with internet connectivity.", "answer": "False. When you create a new VPC, you need to enable internet access for all or part of the VPC.", "last_seen": 739388}, {"level": 1, "question": "What perspective of the AWS Cloud Adoption Framework deals with guidance about operational risk management, to lower your overall risk profile?", "answer": "Governance. This perspective helps you lower risks related to infrastructure operation and failure, and of avoiding unnecessary business expenses.", "last_seen": 739388}, {"level": 1, "question": "True or False: AWS Secrets Manager enables encryption of CloudTrail data.", "answer": "False. Secrets Manager helps encrypt, store, and retrieve credentials for your databases and other services, but it does not help with encryption of CloudTrail data.", "last_seen": 739388}, {"level": 1, "question": "What AWS service is used to create, store, and renew public and private SSL/TLS Certificates, as well as providing encryption of data in transit and at rest by using a protocol such as TLS?", "answer": "AWS Certificate Manager (ACM)", "last_seen": 739388}, {"level": 1, "question": "What credential components are required to gain programmatic access to an AWS account?", "answer": "An Access Key ID, and a Secret Access Key.", "last_seen": 739389}, {"level": 1, "question": "Which AWS Cloud service should be used to run a self-managed relational database?", "answer": "Amazon EC2. You don't need Aurora or RDS... you can host a relational database right on an EC2 instance", "last_seen": 739389}, {"level": 1, "question": "A company does not own a physical data center but needs a network solution that connects employee laptops directly to the AWS cloud. Which service will meet this requirement?", "answer": "Client VPN. This is a managed client-based VPN service that gives you ability to securely access your AWS resources and the resources in your on-prem network, through an OpenVPN-based VPN client.", "last_seen": 739388}, {"level": 2, "question": "Name the service that is a Global Content Delivery Service, using Edge Locations to serve Cached Content.", "answer": "AWS CloudFront.", "last_seen": 739388}, {"level": 1, "question": "What AWS service can be used to migrate data from an on-prem database to a database in AWS?", "answer": "AWS Database Migration Service.", "last_seen": 739389}, {"level": 2, "question": "Each department within a company has its own independent AWS account and its own payment method. The coompany needs to centralize departmental governance and consolidate payments. How can the company achieve these objectives by using AWS services or features?", "answer": "Create an organization in AWS Organizations with all features enabled in one account. Invite all accounts to join the organization.", "last_seen": 739389}, {"level": 2, "question": "Which AWS service gives you the ability to assess, audit, and evaluate the configurations of your AWS resources?", "answer": "AWS Config.", "last_seen": 739389}, {"level": 4, "question": "Is a Network Access List for a Subnet STATEFUL or STATELESS?", "answer": "Stateless. Also, by default all inbound and outbound traffic is allowed. The NACL explicitly blocks all traffic that does not meet any rules.", "last_seen": 739388}]
+[
+  {
+    "level": 3,
+    "question": "True / False: EBS stores data in multiple Availability Zones.",
+    "answer": "False. Elastic Block Storage stores data in only one Availability Zone.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "What tool is used to mount a shared file system, but NOT an operating system?",
+    "answer": "Elastic File System.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "Would static storage w/ few changes favor EBS or S3?",
+    "answer": "S3 Object Storage.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "What connects a Virtual Public Cloud (VPC) to the public internet?",
+    "answer": "An Internet Gateway",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "True / False: Elastic File Storage stores data across multiple Availability Zones.",
+    "answer": "True.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "Name the service that protects against DDoS attacks from the public internet.",
+    "answer": "AWS Shield.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "A company is going through a compliance inspection for ISO 20017. Which AWS service or tool can the company use to download the ISO certifications?",
+    "answer": "AWS Artifact. You use Artifact to download third-party assessments of AWS security and compliance postures.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "How do you access a Private Subnet securely from a corporate data center over the public internet?",
+    "answer": "Connecting to the subnet's Virtual Private Gateway over VPN.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "True or False: When you modify a file in block storage, only the pieces that changed are updated.",
+    "answer": "True. But when a file in object storage is modified, the entire object is updated.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "Name a serverless key-value database service.",
+    "answer": "DynamoDB.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "Which AWS service is a hardware device or virtual software appliance used for hybrid cloud storage with local caching, and without changing storage protocols or technology?",
+    "answer": "Storage Gateway.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "Would complex read/write/change operations favor using Elastic Block Storage or Amazon S3?",
+    "answer": "EBS, since only the pieces that change would get updated, and the rest of the file could remain unchanged.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "What AWS service protects against DDoS attacks?",
+    "answer": "AWS Shield.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "Which services can be used to deploy applications on AWS?",
+    "answer": "AWS ElasticBeanstalk.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "What is defined by the following: The section of a Virtual Public or Private Cloud that isolates a group of resources and sets rules for allowed network traffic. Resources in the subnet are grouped based on security or operational needs. Can be public or private.",
+    "answer": "A Subnet.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "True or False: Relational Database Service can be implemented in Amazon Aurora.",
+    "answer": "True. Amazon Aurora is an Enterprise-level Relational Database Management System.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "A company wants to create a learning application for students. The application must read text out loud. What AWS ML service will fulfill this requirement?",
+    "answer": "AWS Polly",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "Which AWS service tests the network accessibility of EC2 instances and the security state of the applications that run on those instances?",
+    "answer": "AWS Inspector.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "What tool can be used to help AWS customers identify ways to improve workloads, including aligning with best practices, becoming more cost-effective, and becoming more reliable?",
+    "answer": "AWS Well-Architected Tool.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "What AWS service is a \"lift and shift\" solution, enabling migration of any physical servers as well as databases and applications to an Amazon EC2 instance?",
+    "answer": "AWS Application Migration Service.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "A company needs to establish an AWS Site-to-Site VPN tunnel. Which type of gateway should the company use?",
+    "answer": "Virtual Private Gateway.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "Name the service that allows you to: Access compliance reports on demand; review, accept, and manage agreements in AWS.",
+    "answer": "AWS Compliance.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "What EC2 instance would be best suited for Batch Processing jobs?",
+    "answer": "A Compute instance.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "What AWS Cloud Adoption Framework perspective deals with the protection of data, applications, and resources, dealing with topics like access management, threat detection, and data protection?",
+    "answer": "Security.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "Each department within a company has its own independent AWS account and its own payment method. The company needs to centralize departmental governance and consolidate payments. How can the company achieve these objectives by using AWS services or features?",
+    "answer": "Create an organization in AWS Organizations with all features enabled in one account. Invite all accounts to join the organization.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "True / False: AWS Config is a service that provides a detailed view of AWS resource configurations in your AWS account.",
+    "answer": "True.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "What perspective of the AWS Cloud Adoption Framework deals with guidance about operational risk management, to lower your overall risk profile?",
+    "answer": "Governance. This perspective helps you lower risks related to infrastructure operation and failure, and of avoiding unnecessary business expenses.",
+    "last_seen": 739390
+  },
+  {
+    "level": 4,
+    "question": "Are Security Groups STATELESS or STATEFUL?",
+    "answer": "Security Groups (Network Access Control List for EC2 Instances) are STATEFUL, and by default they deny all inbound and outbound traffic.",
+    "last_seen": 739388
+  },
+  {
+    "level": 2,
+    "question": "True or False: AWS Secrets Manager enables encryption of CloudTrail data.",
+    "answer": "False. Secrets Manager helps encrypt, store, and retrieve credentials for your databases and other services, but it does not help with encryption of CloudTrail data.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "A company wants to quickly deploy duplicate infrastructure in a different AWS Region to create global redundancy. Which AWS service will meet this requirement?",
+    "answer": "AWS CloudFormation enables you to reuse resource provisioning templates to spin up resources in multiple AZs and Regions.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "What AWS service protects web applications, and allows you to define rules that block attacks such as cross-site scripting?",
+    "answer": "AWS Web Access Firewall (WAF).",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "Name the AWS service that checks security groups for rules that allow unrestricted access to a resource, which increases opportunities for malicious activity like hacking and denial of service?",
+    "answer": "AWS Trusted Advisor.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "True / False: Accounts in Organizational Units can be provisioned access through user, group, and role permissions.",
+    "answer": "True.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "Which service helps users meet contractual and regulatory compliance requirements for data security by using dedicated hardware appliances within the cloud?",
+    "answer": "AWS Cloud Hardware Security Module (HSM) helps you comply with corporate, contractual, and regulatory compliance requirements for data security by using dedicate hardware to store secure data.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "Which perspective of the AWS Cloud Adoption Framework connects technology and business?",
+    "answer": "People.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "A company needs to deploy an Amazon EC2 instance and attach a storage mount for the operating system and application files. Which AWS service will meet these requirements?",
+    "answer": "Elastic Block Storage. You can use AWS EBS to mount operating systems and applications.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "What S3 classes are for archival data?",
+    "answer": "S3 Glacier Storage",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "What AWS service is a fully managed AWS data security and data privacy service that uses ML to discover, monitor, and protect your sensitive data in AWS, particularly S3?",
+    "answer": "Amazon Macie.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "What resource is a fast and scalable data warehouse that gives you the ability to analyse real-time data?",
+    "answer": "AWS RedShift.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "What AWS service stores and manages configuration data, including passwords, DB strings, and sensitive information?",
+    "answer": "AWS Systems Manager Parameter Store.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "What Amazon service provides centralized governance and billing for an AWS environment, including multiple accounts?",
+    "answer": "AWS Organizations",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "Which AWS service runs containers without the need to provision and manage Amazon EC2 instances?",
+    "answer": "WFargate. Fargate is a serverless service which, with Amazon Elastic Container Service, allows you to run containers without needing to provision or manage servers.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service should be used to implement encryption in transit?",
+    "answer": "AWS Certificate Manager (ACM).",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "True / False: When an EC2 Instance is stopped, billing for that instance stops, but any attached EBS Storage continues to be billed.",
+    "answer": "True.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "Which AWS service provides on-demand downloads of third-party assessments of security and compliance responsibilities, and of AWS security and compliance documents?",
+    "answer": "AWS Artifact.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "What AWS service can be used to migrate data from an on-prem database to a database in AWS?",
+    "answer": "AWS Database Migration Service.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "A company has an on-premises Linux-based server with an Oracle database that runs on it. The company wants to migrate the database server to run on an EC2 Instance. What service should the company use to complete the migration?",
+    "answer": "AWS Application Migration Service",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "What is required to enable internet access for instances in a Public Subnet?",
+    "answer": "Configure a Route Table with a 0.0.0.0/0 CIDR block on the Internet Gateway.",
+    "last_seen": 739389
+  },
+  {
+    "level": 1,
+    "question": "What credential components are required to gain programmatic access to an AWS account?",
+    "answer": "An Access Key ID, and a Secret Access Key.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "Which AWS Hybrid Storage service enables a user's on-premisis applications to seamlessly use AWS Cloud storage?",
+    "answer": "Storage Gateway.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "What Amazon Storage service is great for hosting static web files, music videos, music files, etc.?",
+    "answer": "S3 (Simple Storage Service)",
+    "last_seen": 739388
+  },
+  {
+    "level": 1,
+    "question": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. Which service should they use?",
+    "answer": "Amazon Macie.",
+    "last_seen": 739389
+  },
+  {
+    "level": 2,
+    "question": "Which AWS Cloud service should be used to run a self-managed relational database?",
+    "answer": "Amazon EC2. You don't need Aurora or RDS... you can host a relational database right on an EC2 instance",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service helps users to collect, process, and analyze real-time streaming data from sources including operating logs, financial transactions, and social media feeds?",
+    "answer": "Amazon Kinesis.",
+    "last_seen": 739389
+  },
+  {
+    "level": 2,
+    "question": "Which perspective of the AWS Cloud Adoption Framework makes sure that your cloud services meet your business needs?",
+    "answer": "Operations.",
+    "last_seen": 739389
+  },
+  {
+    "level": 3,
+    "question": "What level AWS Support Plan provides ALL Trusted Advisor checks at the lowest cost to the subscriber?",
+    "answer": "BUSINESS Support Plan.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service allows users to provision infrastructure as code?",
+    "answer": "CloudFormation. Enables users to spin up resources rapidly with JSON or YAML config files.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "A cloud practitioner needs to recommend a data visualization tool for analysts to create user-friendly business intelligence insights. What service should the cloud practitioner recommend?",
+    "answer": "Amazon QuickSight",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "What AWS service scans your AWS environment for software vulnerabilities and network exposure?",
+    "answer": "AWS Inspector",
+    "last_seen": 739388
+  },
+  {
+    "level": 2,
+    "question": "Which service gives customers the ability to audit and monitor changes in AWS resources?",
+    "answer": "AWS Config.",
+    "last_seen": 739389
+  },
+  {
+    "level": 4,
+    "question": "Is a Network Access List for a Subnet STATEFUL or STATELESS?",
+    "answer": "Stateless. Also, by default all inbound and outbound traffic is allowed. The NACL explicitly blocks all traffic that does not meet any rules.",
+    "last_seen": 739388
+  },
+  {
+    "level": 3,
+    "question": "Fill in the blank: Snowball Edge Storage Optimized can store ___ TB HDD or ___ TB SDD.",
+    "answer": "Snowball Edge Storage Optimized can store 80 TB HDD or 1 TB SDD.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "True / False: Reserved EC2 Instances have a minimum 30 day committment.",
+    "answer": "False. Reserved Instances have a minimum 1 year committment.",
+    "last_seen": 739388
+  },
+  {
+    "level": 3,
+    "question": "What AWS Pricing Model offers lower prices on Compute and Machine Learning across any AWS Region?",
+    "answer": "Savings Plan.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "Which service makes it easy to create and manage cryptographic keys and control their use across a wide range of AWS services?",
+    "answer": "AWS Key Management Service.",
+    "last_seen": 739389
+  },
+  {
+    "level": 1,
+    "question": "Which AWS service identifies security groups that allows unrestricted access to a user's AWS resources?",
+    "answer": "AWS Trusted Advisor",
+    "last_seen": 739388
+  },
+  {
+    "level": 2,
+    "question": "True / False: In AWS Organizations, you Ccannot apply service control policies to the organization root.",
+    "answer": "False. In AWS Organizations, you CAN apply Service Control Policies to the following: organization root; an individual member's account; an entire Organization Unit (OU).",
+    "last_seen": 739388
+  },
+  {
+    "level": 1,
+    "question": "True / False: By default, Virtual Public Clouds are configured with internet connectivity.",
+    "answer": "False. When you create a new VPC, you need to enable internet access for all or part of the VPC.",
+    "last_seen": 739388
+  },
+  {
+    "level": 1,
+    "question": "What Amazon ML service provides language translation?",
+    "answer": "Amazon Translate",
+    "last_seen": 739388
+  },
+  {
+    "level": 1,
+    "question": "What service is an omnichannel cloud contact center to help you provide customer service at a lower cost?",
+    "answer": "Amazon Connect.",
+    "last_seen": 739388
+  },
+  {
+    "level": 3,
+    "question": "How many Availability Zones does a Region consist of?",
+    "answer": "At least 3",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "Name the service that is a Global Content Delivery Service, using Edge Locations to serve Cached Content.",
+    "answer": "AWS CloudFront.",
+    "last_seen": 739388
+  },
+  {
+    "level": 2,
+    "question": "A company wants assistance and guidance with the initial design and deployment of services on AWS. What 2 services should they use for help with that?",
+    "answer": "AWS Marketplace; AWS Partners.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "What service provides a target in VPC route tables for internet-routable traffic?",
+    "answer": "An Internet Gateway",
+    "last_seen": 739388
+  },
+  {
+    "level": 1,
+    "question": "Which controls or features are shared controls according to the AWS shared responsibility model?",
+    "answer": "1) Patch Management (AWS will patch and fix flaws within the infrastructure, and the customer must patch their guest OS and applications; 2) Configuration management (same deal as #1)",
+    "last_seen": 739388
+  },
+  {
+    "level": 4,
+    "question": "What EC2 Plan is good for hourly spend committment for an EC2 family and region, for a 1- or 3-year term?",
+    "answer": "EC2 Instance Savings Plan",
+    "last_seen": 739388
+  },
+  {
+    "level": 3,
+    "question": "Which service can be used to backup on-prem storage of virtual machines and storage gateway volumes, providing a centralized console to automate and manage backups across AWS compute, database, and storage services?",
+    "answer": "AWS Backup.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "What AWS service is used to create, store, and renew public and private SSL/TLS Certificates, as well as provide encryption of data in transit and at rest by using a protocol such as TLS?",
+    "answer": "AWS Certificate Manager (ACM).",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "A user must encrypt data that is received, stored, and managed by AWS CloudTrail. Which service provides this capability?",
+    "answer": "AWS Key Management Service enables server-side encryption of CloudTrail data.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "True / False: Amazon Inspector is an automated security and compliance assessment service in AWS that can perform classification of data in S3 buckets.",
+    "answer": "False. While it is an automated security and compliance assessment service, Amazon Inspector does not perform data classification in S3 or automatic discovery.",
+    "last_seen": 739389
+  },
+  {
+    "level": 2,
+    "question": "Which AWS service or feature can be used to block network access to a specific port on an EC2 instance?",
+    "answer": "Network Access Control List (of the subnet).",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "A company does not own a physical data center but needs a network solution that connects employee laptops directly to the AWS cloud. Which service will meet this requirement?",
+    "answer": "Client VPN. This is a managed client-based VPN service that gives you ability to securely access your AWS resources and the resources in your on-prem network, through an OpenVPN-based VPN client.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruption. What is the most cost-effective option for this task?",
+    "answer": "On-Demand.",
+    "last_seen": 739390
+  },
+  {
+    "level": 3,
+    "question": "Which AWS service gives you the ability to assess, audit, and evaluate the configurations of your AWS resources?",
+    "answer": "AWS Config.",
+    "last_seen": 739390
+  },
+  {
+    "level": 1,
+    "question": "A _____ is a virtual firewall that controls traffic to and from AWS resources.",
+    "answer": "Security Group.",
+    "last_seen": 739388
+  },
+  {
+    "level": 1,
+    "question": "Which service is a highly scalable DNS web service?",
+    "answer": "Route 53.",
+    "last_seen": 739388
+  },
+  {
+    "level": 3,
+    "question": "True / False: A Subnet can span Availability Zones.",
+    "answer": "False. A Subnet must reside entirely within one Availability Zone.",
+    "last_seen": 739390
+  },
+  {
+    "level": 2,
+    "question": "True or False: An AWS Elastic Load Balancer can route traffic to different targets across different regions.",
+    "answer": "False: An Elastic Load Balancer can only distribute traffic to instances and resources within a single region, but across Availability Zones.",
+    "last_seen": 739389
+  },
+  {
+    "level": 1,
+    "question": "What is the minimum AWS Support Plan that is required for 24/7 access to enhanced Technical Support?",
+    "answer": "The AWS BUSINESS Support Plan.",
+    "last_seen": 739388
+  }
+]
