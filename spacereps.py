@@ -205,8 +205,8 @@ def quiz_me():
     # Today's levels_ring idx to get levels to quiz on
     todays_levels = set(level_rings[get_level_index()])
 
-    shuffle(bytelist)
     quiz_bytes = [b for b in bytelist if (b.level in todays_levels) and (b.last_seen != TODAYS_ORDINAL)]
+    shuffle(quiz_bytes)
     quiz_bytes = quiz_bytes[:NUM_QUESTIONS_PER_QUIZ]
 
     total = len(quiz_bytes)
