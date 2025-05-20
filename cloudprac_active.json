@@ -604,5 +604,11 @@
     "question": "A company wants to improve its security and audit posture by limiting Amazon EC2 inbound access. What should the company use to access instances remotely instead of opening inbound SSh ports and managing SSH keys?",
     "answer": "AWS Systems Manager Session Manager. Session Manager is a node management service for the cloud or for on-premises compute units. Session Manager provides a secure connection through shell scripting. You can establish the connection without the need to open ports.",
     "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "AWS Elastic Block Store snapshots are _____ data backups.",
+    "answer": "Incremental.",
+    "last_seen": 0
   }
 ]
