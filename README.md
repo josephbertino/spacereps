@@ -11,7 +11,7 @@ Each day you are also offered the opportunity to add new questions to the active
 I am studying for my Amazon AWS Cloud Practitioner Certification.
 
 ## TODO
-- add 'last seen' attribute to questions so you're not quizzed on it twice in one day
+- Add 'last seen' attribute to questions so you're not quizzed on it twice in one day
 - Ability to Delete Questions
 - Advanced: Storage of questions in a DB
 
