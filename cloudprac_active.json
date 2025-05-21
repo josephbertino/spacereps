@@ -39,7 +39,7 @@
     "level": 1,
     "question": "Name the service that allows you to: Access compliance reports on demand; review, accept, and manage agreements in AWS.",
     "answer": "AWS Compliance.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -78,10 +78,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "What AWS Pricing Model offers lower prices on Compute and Machine Learning across any AWS Region?",
     "answer": "Savings Plan.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -234,10 +234,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which perspective of the AWS Cloud Adoption Framework connects technology and business?",
     "answer": "People.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 2,
@@ -282,16 +282,16 @@
     "last_seen": 739388
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "What AWS service is a \"lift and shift\" solution, enabling migration of any physical servers as well as databases and applications to an Amazon EC2 instance?",
     "answer": "AWS Application Migration Service.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "Which service helps users meet contractual and regulatory compliance requirements for data security by using dedicated hardware appliances within the cloud?",
     "answer": "AWS Cloud Hardware Security Module (HSM) helps you comply with corporate, contractual, and regulatory compliance requirements for data security by using dedicate hardware to store secure data.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 1,
@@ -300,10 +300,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True / False: Amazon Inspector is an automated security and compliance assessment service in AWS that can perform classification of data in S3 buckets.",
     "answer": "False. While it is an automated security and compliance assessment service, Amazon Inspector does not perform data classification in S3 or automatic discovery.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 2,
@@ -378,10 +378,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "What S3 classes are for archival data?",
     "answer": "S3 Glacier Storage",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 2,
@@ -390,10 +390,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 2,
     "question": "What Amazon service provides centralized governance and billing for an AWS environment, including multiple accounts?",
-    "answer": "AWS Organizations",
-    "last_seen": 739390
+    "answer": "AWS Organizations.",
+    "last_seen": 739391
   },
   {
     "level": 2,
@@ -420,10 +420,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "Which AWS service provides on-demand downloads of third-party assessments of security and compliance responsibilities, and of AWS security and compliance documents?",
     "answer": "AWS Artifact.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -453,7 +453,7 @@
     "level": 1,
     "question": "Which AWS Hybrid Storage service enables a user's on-premisis applications to seamlessly use AWS Cloud storage?",
     "answer": "Storage Gateway.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 2,
