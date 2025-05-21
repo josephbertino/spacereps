@@ -138,10 +138,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which perspective of the AWS Cloud Adoption Framework makes sure that your cloud services meet your business needs?",
     "answer": "Operations.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -307,9 +307,9 @@
   },
   {
     "level": 2,
-    "question": "A company needs to deploy an Amazon EC2 instance and attach a storage mount for the operating system and application files. Which AWS service will meet these requirements?",
-    "answer": "Elastic Block Storage. You can use AWS EBS to mount operating systems and applications.",
-    "last_seen": 739390
+    "question": "A company needs to deploy an Amazon EC2 instance and attach a storage mount for the operating system and application files. Whould EBS or EFS be better suited for this storage solution?",
+    "answer": "Elastic Block Storage. You can use AWS EBS to mount operating systems and applications. (EFS is more suited for regular file storage).",
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -597,7 +597,7 @@
     "level": 1,
     "question": "A company wants to improve its security and audit posture by limiting Amazon EC2 inbound access. What should the company use to access instances remotely instead of opening inbound SSh ports and managing SSH keys?",
     "answer": "AWS Systems Manager Session Manager. Session Manager is a node management service for the cloud or for on-premises compute units. Session Manager provides a secure connection through shell scripting. You can establish the connection without the need to open ports.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 1,
