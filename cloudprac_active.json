@@ -439,12 +439,6 @@
   },
   {
     "level": 3,
-    "question": "Which service gives customers the ability to audit and monitor changes in AWS resources?",
-    "answer": "AWS Config.",
-    "last_seen": 739390
-  },
-  {
-    "level": 3,
     "question": "Name the service that is a Global Content Delivery Service, using Edge Locations to serve Cached Content.",
     "answer": "AWS CloudFront.",
     "last_seen": 739390
@@ -486,10 +480,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which AWS service allows users to provision infrastructure as code?",
     "answer": "CloudFormation. Enables users to spin up resources rapidly with JSON or YAML config files.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 1,
@@ -609,12 +603,6 @@
     "level": 1,
     "question": "AWS Elastic Block Store snapshots are _____ data backups.",
     "answer": "Incremental.",
-    "last_seen": 0
-  },
-  {
-    "level": 1,
-    "question": "What AWS service gives customers the ability to audit and monitor changes in AWS resources?",
-    "answer": "AWS Config.",
     "last_seen": 0
   },
   {
