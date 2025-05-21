@@ -114,10 +114,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which AWS service identifies security groups that allows unrestricted access to a user's AWS resources?",
     "answer": "AWS Trusted Advisor.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -162,10 +162,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "True or False: AWS Secrets Manager enables encryption of CloudTrail data.",
     "answer": "False. Secrets Manager helps encrypt, store, and retrieve credentials for your databases and other services, but it does not help with encryption of CloudTrail data.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -198,10 +198,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What AWS service protects against DDoS attacks?",
     "answer": "AWS Shield.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -234,10 +234,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which perspective of the AWS Cloud Adoption Framework connects technology and business?",
     "answer": "People.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -312,10 +312,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which service is a highly scalable DNS web service?",
     "answer": "Route 53.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 4,
@@ -372,10 +372,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What is defined by the following: The section of a Virtual Public or Private Cloud that isolates a group of resources and sets rules for allowed network traffic. Resources in the subnet are grouped based on security or operational needs. Can be public or private.",
     "answer": "A Subnet.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 4,
@@ -450,10 +450,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which AWS Hybrid Storage service enables a user's on-premisis applications to seamlessly use AWS Cloud storage?",
     "answer": "Storage Gateway.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -504,10 +504,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which AWS service should be used to implement encryption in transit?",
     "answer": "AWS Certificate Manager (ACM).",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -618,10 +618,10 @@
     "last_seen": 0
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What two services should a user take advantage of to launch a new RDS cluster?",
     "answer": "CloudFormation; Management Console.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -648,10 +648,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What resource controls all inbound and outbound traffic for Amazon EC2 instances, acts as a Stateful Virtual Firewall, and by default Denies all inbound and outbound traffic?",
     "answer": "A Security Group.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 2,
