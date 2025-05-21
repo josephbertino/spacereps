@@ -48,10 +48,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "Name a serverless key-value database service.",
     "answer": "DynamoDB.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -120,10 +120,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What AWS service is a fully managed AWS data security and data privacy service that uses ML to discover, monitor, and protect your sensitive data in AWS, particularly S3?",
     "answer": "Amazon Macie.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 2,
@@ -204,10 +204,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What perspective of the AWS Cloud Adoption Framework deals with guidance about operational risk management, to lower your overall risk profile?",
     "answer": "Governance. This perspective helps you lower risks related to infrastructure operation and failure, and of avoiding unnecessary business expenses.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 2,
@@ -318,10 +318,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True or False: An AWS Elastic Load Balancer can route traffic to different targets across different regions.",
     "answer": "False: An Elastic Load Balancer can only distribute traffic to instances and resources within a single region, but across Availability Zones.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -360,10 +360,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True / False: EBS stores data in multiple Availability Zones.",
     "answer": "False. Elastic Block Storage stores data in only one Availability Zone.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 2,
@@ -426,10 +426,10 @@
     "last_seen": 739391
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "Which service makes it easy to create and manage cryptographic keys and control their use across a wide range of AWS services?",
     "answer": "AWS Key Management Service.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -536,8 +536,8 @@
   {
     "level": 1,
     "question": "Which AWS service should be used to monitor Amazon EC2 instances for CPU and network utilization?",
-    "answer": "Amazon ICloudWatch. CloudWatch monitors resources and collects real-time logs. The logs can give you insight on your resource's overall health. With the CloudWatch agent installed on an EC2 instance, you can monitor your EC2 instances for CPU and network utilization.",
-    "last_seen": 0
+    "answer": "Amazon CloudWatch. CloudWatch monitors resources and collects real-time logs. The logs can give you insight on your resource's overall health. With the CloudWatch agent installed on an EC2 instance, you can monitor your EC2 instances for CPU and network utilization.",
+    "last_seen": 739391
   },
   {
     "level": 1,
@@ -546,10 +546,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which AWS service can help a company detect an outage of its website servers and redirect users to alternate servers?",
     "answer": "Amazon Route 53. Route 53 resolves domain names to IP addresses through records. You can also use Route 53 routing policies for failover routing to another set of resources. (This implies that Route 53 can detect when there is an outage with a resource, presumably by observing that the resource cannot be accessed over the internet).",
-    "last_seen": 0
+    "last_seen": 739391
   },
   {
     "level": 1,
@@ -618,10 +618,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What two services should a user take advantage of to launch a new RDS cluster?",
     "answer": "CloudFormation; Management Console.",
-    "last_seen": 0
+    "last_seen": 739391
   },
   {
     "level": 1,
@@ -666,9 +666,9 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What is the maximum number of objects that an S3 server can store?",
     "answer": "There is no limit!",
-    "last_seen": 0
+    "last_seen": 739391
   }
 ]
