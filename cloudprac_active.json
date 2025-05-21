@@ -6,10 +6,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What AWS service is used to create, store, and renew public and private SSL/TLS Certificates, as well as provide encryption of data in transit and at rest by using a protocol such as TLS?",
     "answer": "AWS Certificate Manager (ACM).",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -18,10 +18,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True / False: A Subnet can span Availability Zones.",
     "answer": "False. A Subnet must reside entirely within one Availability Zone.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -30,10 +30,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True / False: Accounts in Organizational Units can be provisioned access through user, group, and role permissions.",
     "answer": "True.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 1,
@@ -168,10 +168,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. Which service should they use?",
     "answer": "Amazon Macie.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 2,
@@ -402,10 +402,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True or False: Relational Database Service can be implemented in Amazon Aurora.",
     "answer": "True. Amazon Aurora is an Enterprise-level Relational Database Management System.",
-    "last_seen": 739390
+    "last_seen": 739391
   },
   {
     "level": 3,
@@ -564,10 +564,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
-    "question": "A company has an Amazon EC2 instance that must access AWS Secreets Manager to retrieve credentials. Which identity or service is required by the EC2 instance to perform this task?",
+    "level": 2,
+    "question": "A company has an Amazon EC2 instance that must access AWS Secrets Manager to retrieve credentials. Which identity or service is required by the EC2 instance to perform this task?",
     "answer": "IAM role. The EC2 instance will require an instance profile associated with an IAM role to be able to access Secrets Manager. The IAM role will provide the necessary permissions to the EC2 instance.",
-    "last_seen": 0
+    "last_seen": 739391
   },
   {
     "level": 1,
