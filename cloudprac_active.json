@@ -6,10 +6,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What AWS service is used to create, store, and renew public and private SSL/TLS Certificates, as well as provide encryption of data in transit and at rest by using a protocol such as TLS?",
     "answer": "AWS Certificate Manager (ACM).",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -168,10 +168,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. Which service should they use?",
     "answer": "Amazon Macie.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -181,7 +181,7 @@
   },
   {
     "level": 1,
-    "question": "What service provides a target in VPC route tables for internet-routable traffic?",
+    "question": "What service provides a target in Virtual Public Cloud route tables for internet-routable traffic?",
     "answer": "An Internet Gateway.",
     "last_seen": 739390
   },
@@ -216,10 +216,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which controls or features are shared controls according to the AWS shared responsibility model?",
     "answer": "1) Patch Management (AWS will patch and fix flaws within the infrastructure, and the customer must patch their guest OS and applications; 2) Configuration management (same deal as #1)",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -390,10 +390,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What Amazon service provides centralized governance and billing for an AWS environment, including multiple accounts?",
     "answer": "AWS Organizations.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -480,10 +480,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which AWS service allows users to provision infrastructure as code?",
     "answer": "CloudFormation. Enables users to spin up resources rapidly with JSON or YAML config files.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -492,10 +492,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "A company needs to establish an AWS Site-to-Site VPN tunnel. Which type of gateway should the company use?",
     "answer": "Virtual Private Gateway.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -546,10 +546,10 @@
     "last_seen": 0
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which AWS service can help a company detect an outage of its website servers and redirect users to alternate servers?",
     "answer": "Amazon Route 53. Route 53 resolves domain names to IP addresses through records. You can also use Route 53 routing policies for failover routing to another set of resources. (This implies that Route 53 can detect when there is an outage with a resource, presumably by observing that the resource cannot be accessed over the internet).",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -588,10 +588,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Can IAM groups be nested within other groups?",
     "answer": "No. An IAM group can only contain users, not other groups.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -654,10 +654,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What AWS service is a connection between a Virtual Public Cloud and the internet, and allows public internet traffic to access the Virtual Public Cloud?",
     "answer": "An Internet Gateway.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -666,9 +666,9 @@
     "last_seen": 0
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What is the maximum number of objects that an S3 server can store?",
     "answer": "There is no limit!",
-    "last_seen": 739391
+    "last_seen": 739392
   }
 ]
