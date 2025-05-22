@@ -180,10 +180,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What service provides a target in Virtual Public Cloud route tables for internet-routable traffic?",
     "answer": "An Internet Gateway.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -204,10 +204,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What perspective of the AWS Cloud Adoption Framework deals with guidance about operational risk management, to lower your overall risk profile?",
     "answer": "Governance. This perspective helps you lower risks related to infrastructure operation and failure, and of avoiding unnecessary business expenses.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -238,12 +238,6 @@
     "question": "Which perspective of the AWS Cloud Adoption Framework connects technology and business?",
     "answer": "People.",
     "last_seen": 739392
-  },
-  {
-    "level": 2,
-    "question": "A user must encrypt data that is received, stored, and managed by AWS CloudTrail. Which service provides this capability?",
-    "answer": "AWS Key Management Service enables server-side encryption of CloudTrail data.",
-    "last_seen": 739390
   },
   {
     "level": 1,
@@ -366,10 +360,10 @@
     "last_seen": 739391
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which AWS Cloud service should be used to run a self-managed relational database?",
     "answer": "Amazon EC2. You don't need Aurora or RDS... you can host a relational database right on an EC2 instance",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -456,10 +450,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which AWS service is a hardware device or virtual software appliance used for hybrid cloud storage with local caching, and without changing storage protocols or technology?",
     "answer": "Storage Gateway.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -528,10 +522,10 @@
     "last_seen": 739388
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What architecture design principle applies to the concept of rightsizing the AWS Cloud Infrastructure?",
     "answer": "Optimize for Cost. Select the right size and type of resources running your workload by analyzing usage metrics on that workload.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -540,10 +534,10 @@
     "last_seen": 739391
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "A company hosts an application on an Amazon EC2 instance. The EC2 instance needs to access several AWS resources, including Amazon S3 and Amazon DynamoDB. What is the MOST operationally efficient solution to delegate permissions?",
     "answer": "Create an IAM role with the required permissions. Attach the role to the EC2 instance. This will provision access to the AWS resources.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -558,20 +552,20 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "A cloud practitioner is developing a disaster recovery plan and intends to replicate data between multiple geographic areas. Which component of the AWS Cloud should the company use to meet these requirements?",
     "answer": "AWS Regions. Regions are named sets of Availability Zones.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "A company has an Amazon EC2 instance that must access AWS Secrets Manager to retrieve credentials. Which identity or service is required by the EC2 instance to perform this task?",
     "answer": "IAM role. The EC2 instance will require an instance profile associated with an IAM role to be able to access Secrets Manager. The IAM role will provide the necessary permissions to the EC2 instance.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 1,
-    "question": "Which of the following will help a user determine if they need to request a VPC service limit increase?",
+    "question": "Which service is concerned with helping a user determine if they need to request a VPC service limit increase?",
     "answer": "AWS Trusted Advisor. Trusted Advisor performs many checks on your AWS environment and makes recommendations for improvement. One of these checks includes VPC service limit checks, which you can use to determine if you need a VPC service limit.",
     "last_seen": 0
   },
@@ -645,7 +639,7 @@
     "level": 1,
     "question": "Which AWS service monitors network requests for web applications?",
     "answer": "AWS Web Access Firewall.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -670,5 +664,29 @@
     "question": "What is the maximum number of objects that an S3 server can store?",
     "answer": "There is no limit!",
     "last_seen": 739392
+  },
+  {
+    "level": 2,
+    "question": "A user must encrypt data that is received, stored, and managed by AWS CloudTrail. Which AWS service will provide this capability?",
+    "answer": "AWS Key Management Service. KMS can be used to enable server-side encryption of CloudTrail data. KMS makes it easy to create and manage cryptographic keys and control their use across a wide range of AWS services.",
+    "last_seen": 739392
+  },
+  {
+    "level": 1,
+    "question": "True / False: AWS Certificate Manager uses SSL/TLS certificates to provide encryption for CloudTrail data.",
+    "answer": "False: AWS Certificates Manager manages SSL/TLS certificates for encrypting data at rest and in transit, but it does NOT help with encryption for CloudTrail data. For that you'll need AWS Key Management Service.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruptions. What is the MOST cost-effective option ofor this task?",
+    "answer": "On-Demand Instance. (Reserved Instances have a 1-year commitmentt.)",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "True / False: A primary concern of Trusted Advisor is to evaluate a user's security posture within the AWS Cloud.",
+    "answer": "True. Two of the many concerns of Trusted Advisor are S3 Bucket permissions and whether MFA is turned on for the root user.",
+    "last_seen": 0
   }
 ]
