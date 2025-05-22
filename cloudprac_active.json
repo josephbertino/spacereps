@@ -39,7 +39,7 @@
     "level": 1,
     "question": "Name the service that allows you to: Access compliance reports on demand; review, accept, and manage agreements in AWS.",
     "answer": "AWS Compliance.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -420,10 +420,10 @@
     "last_seen": 739393
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "Which service makes it easy to create and manage cryptographic keys and control their use across a wide range of AWS services?",
     "answer": "AWS Key Management Service.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -594,10 +594,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "AWS Elastic Block Store snapshots are _____ data backups.",
     "answer": "Incremental.",
-    "last_seen": 0
+    "last_seen": 739393
   },
   {
     "level": 2,
