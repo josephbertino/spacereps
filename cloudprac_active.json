@@ -72,10 +72,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "True / False: AWS Config is a service that provides a detailed view of AWS resource configurations in your AWS account.",
     "answer": "True.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 4,
@@ -126,16 +126,16 @@
     "last_seen": 739391
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "A _____ is a virtual firewall that controls traffic to and from AWS resources, and it is configured at the instance level.",
     "answer": "Security Group.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
-    "level": 2,
-    "question": "True / False: In AWS Organizations, you Ccannot apply service control policies to the organization root.",
+    "level": 3,
+    "question": "True / False: In AWS Organizations, you cannot apply service control policies to the organization root.",
     "answer": "False. In AWS Organizations, you CAN apply Service Control Policies to the following: organization root; an individual member's account; an entire Organization Unit (OU).",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -210,10 +210,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which AWS service helps users to collect, process, and analyze real-time streaming data from sources including operating logs, financial transactions, and social media feeds?",
     "answer": "Amazon Kinesis.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 3,
@@ -492,10 +492,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "How do you access a Private Subnet securely from a corporate data center over the public internet?",
     "answer": "Connecting to the subnet's Virtual Private Gateway over VPN.",
-    "last_seen": 739390
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -531,7 +531,7 @@
     "level": 1,
     "question": "Which AWS service should be used to monitor Amazon EC2 instances for CPU and network utilization?",
     "answer": "Amazon CloudWatch. CloudWatch monitors resources and collects real-time logs. The logs can give you insight on your resource's overall health. With the CloudWatch agent installed on an EC2 instance, you can monitor your EC2 instances for CPU and network utilization.",
-    "last_seen": 739391
+    "last_seen": 739392
   },
   {
     "level": 2,
@@ -564,10 +564,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which service is concerned with helping a user determine if they need to request a VPC service limit increase?",
     "answer": "AWS Trusted Advisor. Trusted Advisor performs many checks on your AWS environment and makes recommendations for improvement. One of these checks includes VPC service limit checks, which you can use to determine if you need a VPC service limit.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -600,10 +600,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "To reduce operational overhead use a fully _______ service.",
     "answer": "Managed.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -672,10 +672,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "True / False: AWS Certificate Manager uses SSL/TLS certificates to provide encryption for CloudTrail data.",
     "answer": "False: AWS Certificates Manager manages SSL/TLS certificates for encrypting data at rest and in transit, but it does NOT help with encryption for CloudTrail data. For that you'll need AWS Key Management Service.",
-    "last_seen": 0
+    "last_seen": 739392
   },
   {
     "level": 1,
@@ -684,9 +684,9 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "True / False: A primary concern of Trusted Advisor is to evaluate a user's security posture within the AWS Cloud.",
     "answer": "True. Two of the many concerns of Trusted Advisor are S3 Bucket permissions and whether MFA is turned on for the root user.",
-    "last_seen": 0
+    "last_seen": 739392
   }
 ]
