@@ -5,7 +5,7 @@ import json
 from datetime import date
 from random import shuffle
 
-from consts import level_rings, ZERODAY, LEVEL, QUESTION, ANSWER, LAST_SEEN, NUM_QUESTIONS_PER_QUIZ
+from consts import level_rings, ZERODAY, LEVEL, QUESTION, ANSWER, LAST_SEEN
 
 if len(sys.argv) != 2:
     print("\nInvocation: > python spacereps.py <quizset>")
@@ -207,7 +207,6 @@ def quiz_me():
 
     quiz_bytes = [b for b in bytelist if (b.level in todays_levels) and (b.last_seen != TODAYS_ORDINAL)]
     shuffle(quiz_bytes)
-    quiz_bytes = quiz_bytes[:NUM_QUESTIONS_PER_QUIZ]
 
     total = len(quiz_bytes)
 

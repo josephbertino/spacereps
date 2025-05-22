@@ -81,4 +81,3 @@ LEVEL = 'level'
 QUESTION = 'question'
 ANSWER = 'answer'
 LAST_SEEN = 'last_seen'
-NUM_QUESTIONS_PER_QUIZ = 10

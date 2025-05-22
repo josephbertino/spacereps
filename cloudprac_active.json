@@ -1,9 +1,9 @@
 [
   {
-    "level": 1,
+    "level": 2,
     "question": "Name the AWS service that checks security groups for rules that allow unrestricted access to a resource, which increases opportunities for malicious activity like hacking and denial of service?",
     "answer": "AWS Trusted Advisor.",
-    "last_seen": 739390
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -30,10 +30,10 @@
     "last_seen": 739390
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "True / False: Accounts in Organizational Units can be provisioned access through user, group, and role permissions.",
     "answer": "True.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 1,
@@ -66,10 +66,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What credential components are required to gain programmatic access to an AWS account?",
     "answer": "An Access Key ID, and a Secret Access Key.",
-    "last_seen": 739390
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -240,10 +240,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "True / False: By default, Virtual Public Clouds are configured with internet connectivity.",
     "answer": "False. When you create a new VPC, you need to enable internet access for all or part of the VPC.",
-    "last_seen": 739390
+    "last_seen": 739393
   },
   {
     "level": 2,
@@ -270,10 +270,10 @@
     "last_seen": 739390
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "Is a Network Access List for a Subnet STATEFUL or STATELESS?",
     "answer": "Stateless. Also, by default all inbound and outbound traffic is allowed. The NACL explicitly blocks all traffic that does not meet any rules.",
-    "last_seen": 739388
+    "last_seen": 739393
   },
   {
     "level": 4,
@@ -354,10 +354,10 @@
     "last_seen": 739390
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "True / False: EBS stores data in multiple Availability Zones.",
     "answer": "False. Elastic Block Storage stores data in only one Availability Zone.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -372,10 +372,10 @@
     "last_seen": 739392
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "What S3 classes are for archival data?",
     "answer": "S3 Glacier Storage",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 2,
@@ -414,10 +414,10 @@
     "last_seen": 739390
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "Which AWS service provides on-demand downloads of third-party assessments of security and compliance responsibilities, and of AWS security and compliance documents?",
     "answer": "AWS Artifact.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 4,
@@ -480,10 +480,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What AWS service protects web applications, and allows you to define rules that block attacks such as cross-site scripting?",
     "answer": "AWS Web Access Firewall (WAF).",
-    "last_seen": 739390
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -516,10 +516,10 @@
     "last_seen": 739390
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "Are Security Groups STATELESS or STATEFUL?",
     "answer": "Security Groups (Network Access Control List for EC2 Instances) are STATEFUL, and by default they deny all inbound and outbound traffic.",
-    "last_seen": 739388
+    "last_seen": 739393
   },
   {
     "level": 2,
@@ -606,10 +606,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What AWS service allows you to define and provision infrastructure resources using templates, for easy deployment of replicated Amazon EC2 instances?",
     "answer": "AWS CloudFormation.",
-    "last_seen": 0
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -618,16 +618,16 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which AWS service helps to automate common admin tasks and perform one-time config changes at scale on EC2 instances?",
     "answer": "AWS System Manager. Remotely and securely manage the configuration of your managed instances.",
-    "last_seen": 0
+    "last_seen": 739393
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which Pillar of the Well-Architected Framework focuses on the ability of a workload to CONSISTENTLY and CORRECTLY perform its intended function?",
     "answer": "Reliability.",
-    "last_seen": 0
+    "last_seen": 739393
   },
   {
     "level": 1,
@@ -678,15 +678,21 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruptions. What is the MOST cost-effective option ofor this task?",
     "answer": "On-Demand Instance. (Reserved Instances have a 1-year commitmentt.)",
-    "last_seen": 0
+    "last_seen": 739393
   },
   {
     "level": 2,
     "question": "True / False: A primary concern of Trusted Advisor is to evaluate a user's security posture within the AWS Cloud.",
     "answer": "True. Two of the many concerns of Trusted Advisor are S3 Bucket permissions and whether MFA is turned on for the root user.",
     "last_seen": 739392
+  },
+  {
+    "level": 1,
+    "question": "Which AWS Service allows users to identify the changes made to a resource over time?",
+    "answer": "AWS Config.",
+    "last_seen": 0
   }
 ]
