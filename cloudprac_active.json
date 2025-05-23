@@ -814,5 +814,35 @@
     "question": "Remember: You can subscribe to AWS SNS notifications both through Lambda and Email, but not CloudWatch.",
     "answer": "OK.",
     "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: EC2 Instances allow for 750 hours of Free usage per month.",
+    "answer": "OK",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Amazon Timestream allows for time-series data analytics.",
+    "answer": "OK",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Security Groups allow outbound traffic by default, but no inbound traffic.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: \"Multitenancy\" refers to sharing a large pool of resources to customer, because customers (users of AWS cloud) subscribe to instances that are running on the same infrastructure as other customers.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: CloudWatch monitors usage data, performance, and resource utilization and allows you to configure alarms and alerts when a threshold is reached.",
+    "answer": "OK.",
+    "last_seen": 0
   }
 ]
