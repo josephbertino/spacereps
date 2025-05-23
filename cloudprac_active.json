@@ -18,10 +18,10 @@
     "last_seen": 739390
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "True / False: A Subnet can span Availability Zones.",
     "answer": "False. A Subnet must reside entirely within one Availability Zone.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -48,10 +48,10 @@
     "last_seen": 739390
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "Name a serverless key-value database service.",
     "answer": "DynamoDB.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -66,10 +66,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What credential components are required to gain programmatic access to an AWS account?",
     "answer": "An Access Key ID, and a Secret Access Key.",
-    "last_seen": 739393
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -120,10 +120,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What AWS service is a fully managed AWS data security and data privacy service that uses ML to discover, monitor, and protect your sensitive data in AWS, particularly S3?",
     "answer": "Amazon Macie.",
-    "last_seen": 739391
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -150,10 +150,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What Amazon Storage service is great for hosting static web files, music videos, music files, etc.?",
     "answer": "S3 (Simple Storage Service).",
-    "last_seen": 739390
+    "last_seen": 739394
   },
   {
     "level": 2,
@@ -193,9 +193,9 @@
   },
   {
     "level": 2,
-    "question": "Which services can be used to deploy applications on AWS?",
+    "question": "Which service can be used to deploy applications on AWS?",
     "answer": "AWS ElasticBeanstalk.",
-    "last_seen": 739390
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -228,10 +228,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What is required to enable internet access for instances in a Public Subnet?",
     "answer": "Configure a Route Table with a 0.0.0.0/0 CIDR block on the Internet Gateway.",
-    "last_seen": 739390
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -240,10 +240,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 1,
     "question": "True / False: By default, Virtual Public Clouds are configured with internet connectivity.",
     "answer": "False. When you create a new VPC, you need to enable internet access for all or part of the VPC.",
-    "last_seen": 739393
+    "last_seen": 739394
   },
   {
     "level": 2,
@@ -276,34 +276,34 @@
     "last_seen": 739393
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "What AWS service is a \"lift and shift\" solution, enabling migration of any physical servers as well as databases and applications to an Amazon EC2 instance?",
     "answer": "AWS Application Migration Service.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "Which service helps users meet contractual and regulatory compliance requirements for data security by using dedicated hardware appliances within the cloud?",
     "answer": "AWS Cloud Hardware Security Module (HSM) helps you comply with corporate, contractual, and regulatory compliance requirements for data security by using dedicate hardware to store secure data.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 1,
     "question": "What AWS service stores and manages configuration data, including passwords, DB strings, and sensitive information?",
     "answer": "AWS Systems Manager Parameter Store.",
-    "last_seen": 739390
+    "last_seen": 739393
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "True / False: Amazon Inspector is an automated security and compliance assessment service in AWS that can perform classification of data in S3 buckets.",
     "answer": "False. While it is an automated security and compliance assessment service, Amazon Inspector does not perform data classification in S3 or automatic discovery.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "A company needs to deploy an Amazon EC2 instance and attach a storage mount for the operating system and application files. Whould EBS or EFS be better suited for this storage solution?",
     "answer": "Elastic Block Storage. You can use AWS EBS to mount operating systems and applications. (EFS is more suited for regular file storage).",
-    "last_seen": 739392
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -312,10 +312,10 @@
     "last_seen": 739392
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "True or False: An AWS Elastic Load Balancer can route traffic to different targets across different regions.",
     "answer": "False: An Elastic Load Balancer can only distribute traffic to instances and resources within a single region, but across Availability Zones.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -324,10 +324,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Each department within a company has its own independent AWS account and its own payment method. The company needs to centralize departmental governance and consolidate payments. How can the company achieve these objectives by using AWS services or features?",
     "answer": "Create an organization in AWS Organizations with all features enabled in one account. Invite all accounts to join the organization.",
-    "last_seen": 739390
+    "last_seen": 739394
   },
   {
     "level": 5,
@@ -378,10 +378,10 @@
     "last_seen": 739393
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What AWS service can be used to migrate data from an on-prem database to a database in AWS?",
     "answer": "AWS Database Migration Service.",
-    "last_seen": 739390
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -390,16 +390,16 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "True / False: Reserved EC2 Instances have a minimum 30 day committment.",
     "answer": "False. Reserved Instances have a minimum 1 year committment.",
-    "last_seen": 739390
+    "last_seen": 739394
   },
   {
-    "level": 4,
+    "level": 5,
     "question": "True or False: Relational Database Service can be implemented in Amazon Aurora.",
     "answer": "True. Amazon Aurora is an Enterprise-level Relational Database Management System.",
-    "last_seen": 739391
+    "last_seen": 739393
   },
   {
     "level": 3,
@@ -444,10 +444,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which AWS Hybrid Storage service enables a user's on-premisis applications to seamlessly use AWS Cloud storage?",
     "answer": "Storage Gateway.",
-    "last_seen": 739392
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -468,10 +468,10 @@
     "last_seen": 739390
   },
   {
-    "level": 2,
-    "question": "What AWS service scans your AWS environment for software vulnerabilities and network exposure?",
+    "level": 1,
+    "question": "What AWS service automatically scans your AWS environment for software vulnerabilities and network exposure?",
     "answer": "AWS Inspector.",
-    "last_seen": 739390
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -480,10 +480,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What AWS service protects web applications, and allows you to define rules that block attacks such as cross-site scripting?",
     "answer": "AWS Web Access Firewall (WAF).",
-    "last_seen": 739393
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -528,10 +528,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which AWS service should be used to monitor Amazon EC2 instances for CPU and network utilization?",
     "answer": "Amazon CloudWatch. CloudWatch monitors resources and collects real-time logs. The logs can give you insight on your resource's overall health. With the CloudWatch agent installed on an EC2 instance, you can monitor your EC2 instances for CPU and network utilization.",
-    "last_seen": 739392
+    "last_seen": 739394
   },
   {
     "level": 2,
@@ -546,10 +546,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "A web developer is concerned that a DDoS attack could target an application. Which AWS services or features can help protect against such an attack?",
     "answer": "AWS Shield (for protection against DDoS); Amazon CloudFront (Shield Standard exists on CloudFront and Amazon Route 53).",
-    "last_seen": 0
+    "last_seen": 739393
   },
   {
     "level": 2,
@@ -564,22 +564,22 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "Which service is concerned with helping a user determine if they need to request a VPC service limit increase?",
     "answer": "AWS Trusted Advisor. Trusted Advisor performs many checks on your AWS environment and makes recommendations for improvement. One of these checks includes VPC service limit checks, which you can use to determine if you need a VPC service limit.",
-    "last_seen": 739392
+    "last_seen": 739394
   },
   {
-    "level": 1,
+    "level": 3,
     "question": "What is a benefit of moving to the AWS Cloud in terms of improving time to market?",
     "answer": "Increased business agility.",
-    "last_seen": 0
+    "last_seen": 739394
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "True / False: Providing Awareness Training is the responsibility only of AWS customers.",
     "answer": "False. Providing awareness and training is a shared responsibility between the user and AWS. AWS trains their employees, and the user trains their employees.",
-    "last_seen": 739393
+    "last_seen": 739394
   },
   {
     "level": 2,
@@ -591,7 +591,7 @@
     "level": 1,
     "question": "A company wants to improve its security and audit posture by limiting Amazon EC2 inbound access. What should the company use to access instances remotely instead of opening inbound SSh ports and managing SSH keys?",
     "answer": "AWS Systems Manager Session Manager. Session Manager is a node management service for the cloud or for on-premises compute units. Session Manager provides a secure connection through shell scripting. You can establish the connection without the need to open ports.",
-    "last_seen": 739393
+    "last_seen": 739394
   },
   {
     "level": 2,
@@ -606,10 +606,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "What AWS service allows you to define and provision infrastructure resources using templates, for easy deployment of replicated Amazon EC2 instances?",
     "answer": "AWS CloudFormation.",
-    "last_seen": 739393
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -633,13 +633,13 @@
     "level": 1,
     "question": "Which AWS service provides intelligent threat detection for your AWS infrastructure and resources, and continually monitors network activity and account behavior?",
     "answer": "GuardDuty.",
-    "last_seen": 0
+    "last_seen": 739393
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Which AWS service monitors network requests for web applications?",
     "answer": "AWS Web Access Firewall.",
-    "last_seen": 739392
+    "last_seen": 739393
   },
   {
     "level": 2,
@@ -654,10 +654,10 @@
     "last_seen": 739392
   },
   {
-    "level": 1,
+    "level": 3,
     "question": "What AWS service is an enterprise-class relational database?",
     "answer": "Aurora.",
-    "last_seen": 0
+    "last_seen": 739394
   },
   {
     "level": 3,
@@ -672,10 +672,10 @@
     "last_seen": 739392
   },
   {
-    "level": 2,
+    "level": 3,
     "question": "True / False: AWS Certificate Manager uses SSL/TLS certificates to provide encryption for CloudTrail data.",
     "answer": "False: AWS Certificates Manager manages SSL/TLS certificates for encrypting data at rest and in transit, but it does NOT help with encryption for CloudTrail data. For that you'll need AWS Key Management Service.",
-    "last_seen": 739392
+    "last_seen": 739394
   },
   {
     "level": 2,
@@ -696,9 +696,123 @@
     "last_seen": 739393
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Identify the AWS service that is responsible for the following: maintenance of common compliance framework documentation; assures customers that AWS is maintaining physical security and data protection.",
     "answer": "AWS Compliance.",
+    "last_seen": 739393
+  },
+  {
+    "level": 1,
+    "question": "True / False: Amazon S3 offers eventual read after write consistency for all PUT and DELETE operations in all AWS regions.",
+    "answer": "False. S3 offers STRONG Read after Write consistency for all PUT and DELETE operations in all AWS regions.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "True / False: NAT Gateways allow instances in a Private subsnet to connect to the internet.",
+    "answer": "True.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which is the lowest support plan you would need to choose in order to get access to Truster Advisor?",
+    "answer": "Developer Support offers access to the seven core Advisor checks.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "What AWS mechanism is used to protect the overall availability of resources within AWS and to protect users against potential runaway billing?",
+    "answer": "Quotas.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Which cloud service is most closely associated with DevOps?",
+    "answer": "Platform as a Service. Provides fully featured hosting environments where DevOps engineers only need to deploy their code and any needed data for testing.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: \"Standard\" and \"Convertible\" are two types of Reserved EC2 Instances.",
+    "answer": "Ok.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: HASHING data is used to determine that data's integrity. Because you compare the hash against a known value to determine whether hthe data changed.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: EC2 Instances offer both a Quick Estimate as well as an Advanced Estimate in the Pricing Calculator.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Fargate (serverless containerization) and Lambda (serverless compute) offer Savings Plans.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: SAML (Security Assertion Markup Language) is developeed for the use of passing secure data for SSO transactions. This standard is widely used for SSO federations and implementations.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "VIRTUALIZATION allows a large pool of hardware, storage, or network resources to be allocated to systems and services that are hosted on it without those systems needing to add new hardware to meet demand.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Resiliency refers to the ability of a system to continue to function when some portion of the system experiences an outage.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Availability refers to an OVERALL system being up or down. This is different from resiliency, which allows one portion to function even when another portion experiences an outage.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Amazon EC2 Auto Scaling can launch additional resources across multiple AZs in one Region, or across multiple AZs in multiple regions.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Amazon Personal Health Dashboard offers alerts about upcoming scheduled maintenance events that can impact your AWS Cloud resources.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Cost Explorer is used to track the LAST 12 months of usage and provide projections for the NEXT 12 months. Whereas Amazon Budgets is more granular and allows you to examine the PAST MONTH's spending and provide an estimate of what the bill will be at the end of the current month.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: The Knowledge Center is structured as an FAQ / Forum area. Whereas Documentation is straight up Documentation.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: Amazon RDS automates Software Patching, Backups, and other Administrative Tasks.",
+    "answer": "OK.",
+    "last_seen": 0
+  },
+  {
+    "level": 1,
+    "question": "Remember: You can subscribe to AWS SNS notifications both through Lambda and Email, but not CloudWatch.",
+    "answer": "OK.",
     "last_seen": 0
   }
 ]
