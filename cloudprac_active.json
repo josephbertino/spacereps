@@ -72,10 +72,10 @@
     "last_seen": 739394
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True / False: AWS Config is a service that provides a detailed view of AWS resource configurations in your AWS account.",
     "answer": "True.",
-    "last_seen": 739392
+    "last_seen": 739395
   },
   {
     "level": 5,
@@ -126,10 +126,10 @@
     "last_seen": 739394
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "A _____ is a virtual firewall that controls traffic to and from AWS resources, and it is configured at the instance level.",
     "answer": "Security Group.",
-    "last_seen": 739392
+    "last_seen": 739395
   },
   {
     "level": 3,
@@ -144,16 +144,16 @@
     "last_seen": 739392
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True or False: When you modify a file in block storage, only the pieces that changed are updated.",
     "answer": "True. But when a file in object storage is modified, the entire object is updated.",
-    "last_seen": 739390
+    "last_seen": 739395
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "What Amazon Storage service is great for hosting static web files, music videos, music files, etc.?",
     "answer": "S3 (Simple Storage Service).",
-    "last_seen": 739394
+    "last_seen": 739395
   },
   {
     "level": 2,
@@ -168,10 +168,10 @@
     "last_seen": 739392
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. Which service should they use?",
     "answer": "Amazon Macie.",
-    "last_seen": 739392
+    "last_seen": 739395
   },
   {
     "level": 2,
@@ -288,10 +288,10 @@
     "last_seen": 739393
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What AWS service stores and manages configuration data, including passwords, DB strings, and sensitive information?",
     "answer": "AWS Systems Manager Parameter Store.",
-    "last_seen": 739393
+    "last_seen": 739395
   },
   {
     "level": 5,
@@ -360,10 +360,10 @@
     "last_seen": 739393
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "Which AWS Cloud service should be used to run a self-managed relational database?",
     "answer": "Amazon EC2. You don't need Aurora or RDS... you can host a relational database right on an EC2 instance",
-    "last_seen": 739392
+    "last_seen": 739395
   },
   {
     "level": 3,
@@ -402,10 +402,10 @@
     "last_seen": 739393
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "Which AWS service gives you the ability to assess, audit, and evaluate the configurations of your AWS resources?",
     "answer": "AWS Config.",
-    "last_seen": 739390
+    "last_seen": 739395
   },
   {
     "level": 3,
@@ -438,10 +438,10 @@
     "last_seen": 739390
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "What level AWS Support Plan provides ALL Trusted Advisor checks at the lowest cost to the subscriber?",
     "answer": "BUSINESS Support Plan.",
-    "last_seen": 739390
+    "last_seen": 739395
   },
   {
     "level": 3,
@@ -468,10 +468,10 @@
     "last_seen": 739390
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "What AWS service automatically scans your AWS environment for software vulnerabilities and network exposure?",
     "answer": "AWS Inspector.",
-    "last_seen": 739394
+    "last_seen": 739395
   },
   {
     "level": 3,
@@ -492,10 +492,10 @@
     "last_seen": 739392
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "How do you access a Private Subnet securely from a corporate data center over the public internet?",
     "answer": "Connecting to the subnet's Virtual Private Gateway over VPN.",
-    "last_seen": 739392
+    "last_seen": 739395
   },
   {
     "level": 2,
@@ -564,22 +564,22 @@
     "last_seen": 739392
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "Which service is concerned with helping a user determine if they need to request a VPC service limit increase?",
     "answer": "AWS Trusted Advisor. Trusted Advisor performs many checks on your AWS environment and makes recommendations for improvement. One of these checks includes VPC service limit checks, which you can use to determine if you need a VPC service limit.",
-    "last_seen": 739394
+    "last_seen": 739395
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "What is a benefit of moving to the AWS Cloud in terms of improving time to market?",
     "answer": "Increased business agility.",
-    "last_seen": 739394
+    "last_seen": 739395
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True / False: Providing Awareness Training is the responsibility only of AWS customers.",
     "answer": "False. Providing awareness and training is a shared responsibility between the user and AWS. AWS trains their employees, and the user trains their employees.",
-    "last_seen": 739394
+    "last_seen": 739395
   },
   {
     "level": 2,
@@ -672,10 +672,10 @@
     "last_seen": 739392
   },
   {
-    "level": 3,
+    "level": 4,
     "question": "True / False: AWS Certificate Manager uses SSL/TLS certificates to provide encryption for CloudTrail data.",
     "answer": "False: AWS Certificates Manager manages SSL/TLS certificates for encrypting data at rest and in transit, but it does NOT help with encryption for CloudTrail data. For that you'll need AWS Key Management Service.",
-    "last_seen": 739394
+    "last_seen": 739395
   },
   {
     "level": 2,
@@ -702,16 +702,16 @@
     "last_seen": 739393
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "True / False: Amazon S3 offers eventual read after write consistency for all PUT and DELETE operations in all AWS regions.",
     "answer": "False. S3 offers STRONG Read after Write consistency for all PUT and DELETE operations in all AWS regions.",
-    "last_seen": 0
+    "last_seen": 739395
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "True / False: NAT Gateways allow instances in a Private subsnet to connect to the internet.",
     "answer": "True.",
-    "last_seen": 0
+    "last_seen": 739395
   },
   {
     "level": 1,
@@ -732,16 +732,16 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Remember: \"Standard\" and \"Convertible\" are two types of Reserved EC2 Instances.",
     "answer": "Ok.",
-    "last_seen": 0
+    "last_seen": 739395
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Remember: HASHING data is used to determine that data's integrity. Because you compare the hash against a known value to determine whether hthe data changed.",
     "answer": "OK.",
-    "last_seen": 0
+    "last_seen": 739395
   },
   {
     "level": 1,
@@ -762,10 +762,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "VIRTUALIZATION allows a large pool of hardware, storage, or network resources to be allocated to systems and services that are hosted on it without those systems needing to add new hardware to meet demand.",
     "answer": "OK.",
-    "last_seen": 0
+    "last_seen": 739395
   },
   {
     "level": 1,
@@ -804,10 +804,10 @@
     "last_seen": 0
   },
   {
-    "level": 1,
+    "level": 2,
     "question": "Remember: Amazon RDS automates Software Patching, Backups, and other Administrative Tasks.",
     "answer": "OK.",
-    "last_seen": 0
+    "last_seen": 739395
   },
   {
     "level": 1,
